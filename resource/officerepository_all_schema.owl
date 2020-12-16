@@ -1,0 +1,2669 @@
+Prefix(:=<http://massif.streaming/ontologies/rsplab/officerepository.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(ns:=<http://creativecommons.org/ns#>)
+Prefix(ns1:=<http://purl.oclc.org/NET/ssnx/ssn#>)
+Prefix(ns2:=<http://www.insight-centre.org/ces#>)
+Prefix(ns3:=<http://www.loa-cnr.it/ontologies/DUL.owl#>)
+Prefix(ns4:=<http://www.daml.org/services/owl-s/1.2/ServiceParameter.owl#>)
+Prefix(ns5:=<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#>)
+Prefix(ns6:=<http://www.daml.org/services/owl-s/1.2/ServiceCategory.owl#>)
+Prefix(ns7:=<http://sense.deri.ie/vocab/emvo#>)
+Prefix(ns8:=<http://www.insight-centre.org/citytraffic#>)
+Prefix(ns9:=<http://www.daml.org/services/owl-s/1.2/Service.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+
+
+Ontology(<http://massif.streaming/ontologies/rsplab/officerepository.owl>
+
+Declaration(Class(ns5:AverageCongestionLevel))
+Declaration(Class(ns5:BigCongestionLevel))
+Declaration(Class(ns5:Building))
+Declaration(Class(ns5:Childcare))
+Declaration(Class(ns5:CongestionFlexibleOfficeObservation))
+Declaration(Class(ns5:EveningOffice))
+Declaration(Class(ns5:FlexibleHours))
+Declaration(Class(ns5:FlexibleOffice))
+Declaration(Class(ns5:FlexibleOfficeObservation))
+Declaration(Class(ns5:HighTrafficMainRoadNearFlexibleOffice))
+Declaration(Class(ns5:HighTrafficNearFlexibleOffice))
+Declaration(Class(ns5:HighTrafficRoadNearFlexibleOffice))
+Declaration(Class(ns5:HighTrafficStreetNearFlexibleOffice))
+Declaration(Class(ns5:HugeCongestionLevel))
+Declaration(Class(ns5:LowTrafficMainRoadNearFlexibleOffice))
+Declaration(Class(ns5:LowTrafficNearFlexibleOffice))
+Declaration(Class(ns5:LowTrafficRoadNearFlexibleOffice))
+Declaration(Class(ns5:LowTrafficStreetNearFlexibleOffice))
+Declaration(Class(ns5:MainRoad))
+Declaration(Class(ns5:NoFixedHoursOffice))
+Declaration(Class(ns5:Office))
+Declaration(Class(ns5:Parking))
+Declaration(Class(ns5:Policies))
+Declaration(Class(ns5:Road))
+Declaration(Class(ns5:SmallCongestionLevel))
+Declaration(Class(ns5:StartEarly))
+Declaration(Class(ns5:StartEarlyOffice))
+Declaration(Class(ns5:StopEarly))
+Declaration(Class(ns5:StopEarlyOffice))
+Declaration(Class(ns5:StrictOffice))
+Declaration(Class(ns5:TinyCongestionLevel))
+Declaration(Class(ns5:TrafficObservation))
+Declaration(Class(:AVGSpeed))
+Declaration(Class(:AVGSpeedObservation))
+Declaration(Class(:AVGTime))
+Declaration(Class(:AVGTimeObservation))
+Declaration(Class(:ActiveSensor))
+Declaration(Class(:CongestionObservation))
+Declaration(Class(:CongestionOnlyObservation))
+Declaration(Class(:DiscreteCongestionObservation))
+Declaration(Class(:DiscreteHighCongestionObservation))
+Declaration(Class(:DiscreteLowCongestionObservation))
+Declaration(Class(:DiscreteMediumCongestionObservation))
+Declaration(Class(:DiscreteValue))
+Declaration(Class(:HighValue))
+Declaration(Class(:LazySensor))
+Declaration(Class(:LazySensorRestriction))
+Declaration(Class(:LowValue))
+Declaration(Class(:MediumValue))
+Declaration(Class(:ObservationCongestionOnly))
+Declaration(Class(:ObservationOneCongestion))
+Declaration(Class(:Office))
+Declaration(Class(:SelfDescribingObservation))
+Declaration(Class(:TrafficMetrics))
+Declaration(Class(:VehicleCount))
+Declaration(Class(:VehicleCountObservation))
+Declaration(Class(ns1:Accuracy))
+Declaration(Class(ns1:BatteryLifetime))
+Declaration(Class(ns1:Condition))
+Declaration(Class(ns1:Deployment))
+Declaration(Class(ns1:DeploymentRelatedProcess))
+Declaration(Class(ns1:DetectionLimit))
+Declaration(Class(ns1:Device))
+Declaration(Class(ns1:Drift))
+Declaration(Class(ns1:FeatureOfInterest))
+Declaration(Class(ns1:Frequency))
+Declaration(Class(ns1:Input))
+Declaration(Class(ns1:Latency))
+Declaration(Class(ns1:MaintenanceSchedule))
+Declaration(Class(ns1:MeasurementCapability))
+Declaration(Class(ns1:MeasurementProperty))
+Declaration(Class(ns1:MeasurementRange))
+Declaration(Class(ns1:Observation))
+Declaration(Class(ns1:ObservationValue))
+Declaration(Class(ns1:OperatingPowerRange))
+Declaration(Class(ns1:OperatingProperty))
+Declaration(Class(ns1:OperatingRange))
+Declaration(Class(ns1:Output))
+Declaration(Class(ns1:Platform))
+Declaration(Class(ns1:Precision))
+Declaration(Class(ns1:Process))
+Declaration(Class(ns1:Property))
+Declaration(Class(ns1:Resolution))
+Declaration(Class(ns1:ResponseTime))
+Declaration(Class(ns1:Selectivity))
+Declaration(Class(ns1:Sensing))
+Declaration(Class(ns1:SensingDevice))
+Declaration(Class(ns1:Sensitivity))
+Declaration(Class(ns1:Sensor))
+Declaration(Class(ns1:SensorDataSheet))
+Declaration(Class(ns1:SensorInput))
+Declaration(Class(ns1:SensorOutput))
+Declaration(Class(ns1:Stimulus))
+Declaration(Class(ns1:SurvivalProperty))
+Declaration(Class(ns1:SurvivalRange))
+Declaration(Class(ns1:System))
+Declaration(Class(ns1:SystemLifetime))
+Declaration(Class(<http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding>))
+Declaration(Class(<http://www.daml.org/services/owl-s/1.2/Profile.owl#Profile>))
+Declaration(Class(ns9:Service))
+Declaration(Class(ns6:ServiceCategory))
+Declaration(Class(ns4:ServiceParameter))
+Declaration(Class(ns2:Accessiblity))
+Declaration(Class(ns2:Accuracy))
+Declaration(Class(ns2:Aggregation))
+Declaration(Class(ns2:And))
+Declaration(Class(ns2:Availability))
+Declaration(Class(ns2:BandWidthConsumption))
+Declaration(Class(ns2:Believability))
+Declaration(Class(ns2:ComplexEventService))
+Declaration(Class(ns2:Constraint))
+Declaration(Class(ns2:Context))
+Declaration(Class(ns2:Cost))
+Declaration(Class(ns2:EnergyConsumption))
+Declaration(Class(ns2:EventPattern))
+Declaration(Class(ns2:EventPayload))
+Declaration(Class(ns2:EventProfile))
+Declaration(Class(ns2:EventRequest))
+Declaration(Class(ns2:EventService))
+Declaration(Class(ns2:Filter))
+Declaration(Class(ns2:Frequency))
+Declaration(Class(ns2:HttpGrounding))
+Declaration(Class(ns2:JmsGrounding))
+Declaration(Class(ns2:Latency))
+Declaration(Class(ns2:NFP))
+Declaration(Class(ns2:Or))
+Declaration(Class(ns2:Preference))
+Declaration(Class(ns2:Price))
+Declaration(Class(ns2:PrimitiveEventService))
+Declaration(Class(ns2:QoS))
+Declaration(Class(ns2:QosWeightPreference))
+Declaration(Class(ns2:Reliability))
+Declaration(Class(ns2:Repetition))
+Declaration(Class(ns2:Security))
+Declaration(Class(ns2:Selection))
+Declaration(Class(ns2:Sequence))
+Declaration(Class(ns2:ServiceNode))
+Declaration(Class(ns2:SlidingWindow))
+Declaration(Class(ns2:Timeliness))
+Declaration(Class(ns8:API))
+Declaration(Class(ns8:AvgSpeed))
+Declaration(Class(ns8:City))
+Declaration(Class(ns8:CongestionFactor))
+Declaration(Class(ns8:CongestionLevel))
+Declaration(Class(ns8:Distance))
+Declaration(Class(ns8:District))
+Declaration(Class(ns8:DistrictTrafficReportService))
+Declaration(Class(ns8:EstimatedTime))
+Declaration(Class(ns8:Humidity))
+Declaration(Class(ns8:Location))
+Declaration(Class(ns8:MeasureTime))
+Declaration(Class(ns8:Node))
+Declaration(Class(ns8:ParkingVacancy))
+Declaration(Class(ns8:Place))
+Declaration(Class(ns8:SegTrafficReportService))
+Declaration(Class(ns8:Street))
+Declaration(Class(ns8:StreetTrafficReportService))
+Declaration(Class(ns8:Temperature))
+Declaration(Class(ns8:VehicleCount))
+Declaration(Class(ns8:WindSpeed))
+Declaration(Class(<http://www.insight-centre/DataRequest#DataRequest>))
+Declaration(Class(ns3:Abstract))
+Declaration(Class(ns3:Action))
+Declaration(Class(ns3:Agent))
+Declaration(Class(ns3:Amount))
+Declaration(Class(ns3:BiologicalObject))
+Declaration(Class(ns3:ChemicalObject))
+Declaration(Class(ns3:Classification))
+Declaration(Class(ns3:Collection))
+Declaration(Class(ns3:Collective))
+Declaration(Class(ns3:CollectiveAgent))
+Declaration(Class(ns3:Community))
+Declaration(Class(ns3:Concept))
+Declaration(Class(ns3:Configuration))
+Declaration(Class(ns3:Contract))
+Declaration(Class(ns3:Description))
+Declaration(Class(ns3:Design))
+Declaration(Class(ns3:DesignedArtifact))
+Declaration(Class(ns3:DesignedSubstance))
+Declaration(Class(ns3:Diagnosis))
+Declaration(Class(ns3:Entity))
+Declaration(Class(ns3:Event))
+Declaration(Class(ns3:EventType))
+Declaration(Class(ns3:FormalEntity))
+Declaration(Class(ns3:FunctionalSubstance))
+Declaration(Class(ns3:Goal))
+Declaration(Class(ns3:Group))
+Declaration(Class(ns3:InformationEntity))
+Declaration(Class(ns3:InformationObject))
+Declaration(Class(ns3:InformationRealization))
+Declaration(Class(ns3:LocalConcept))
+Declaration(Class(ns3:Method))
+Declaration(Class(ns3:Narrative))
+Declaration(Class(ns3:NaturalPerson))
+Declaration(Class(ns3:Norm))
+Declaration(Class(ns3:Object))
+Declaration(Class(ns3:Organism))
+Declaration(Class(ns3:Organization))
+Declaration(Class(ns3:Parameter))
+Declaration(Class(ns3:Pattern))
+Declaration(Class(ns3:Person))
+Declaration(Class(ns3:Personification))
+Declaration(Class(ns3:PhysicalAgent))
+Declaration(Class(ns3:PhysicalArtifact))
+Declaration(Class(ns3:PhysicalAttribute))
+Declaration(Class(ns3:PhysicalBody))
+Declaration(Class(ns3:PhysicalObject))
+Declaration(Class(ns3:PhysicalPlace))
+Declaration(Class(ns3:Place))
+Declaration(Class(ns3:Plan))
+Declaration(Class(ns3:PlanExecution))
+Declaration(Class(ns3:Process))
+Declaration(Class(ns3:Project))
+Declaration(Class(ns3:Quality))
+Declaration(Class(ns3:Region))
+Declaration(Class(ns3:Relation))
+Declaration(Class(ns3:Right))
+Declaration(Class(ns3:Role))
+Declaration(Class(ns3:Set))
+Declaration(Class(ns3:Situation))
+Declaration(Class(ns3:SocialAgent))
+Declaration(Class(ns3:SocialObject))
+Declaration(Class(ns3:SocialObjectAttribute))
+Declaration(Class(ns3:SocialPerson))
+Declaration(Class(ns3:SocialRelation))
+Declaration(Class(ns3:SpaceRegion))
+Declaration(Class(ns3:SpatioTemporalRegion))
+Declaration(Class(ns3:Substance))
+Declaration(Class(ns3:Task))
+Declaration(Class(ns3:Theory))
+Declaration(Class(ns3:TimeInterval))
+Declaration(Class(ns3:Transition))
+Declaration(Class(ns3:TypeCollection))
+Declaration(Class(ns3:UnitOfMeasure))
+Declaration(Class(ns3:Workflow))
+Declaration(Class(ns3:WorkflowExecution))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#DesignedArtifact>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Event>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#InformationObject>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Method>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Object>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#PhysicalObject>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Process>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Quality>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Region>))
+Declaration(Class(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Situation>))
+Declaration(Class(rdfs:Bag))
+Declaration(Class(rdfs:Seq))
+Declaration(ObjectProperty(ns5:hasObservedValue))
+Declaration(ObjectProperty(ns5:hasPolicy))
+Declaration(ObjectProperty(ns5:observedFeature))
+Declaration(ObjectProperty(:hasDiscreteValue))
+Declaration(ObjectProperty(ns1:attachedSystem))
+Declaration(ObjectProperty(ns1:deployedOnPlatform))
+Declaration(ObjectProperty(ns1:deployedSystem))
+Declaration(ObjectProperty(ns1:deploymentProcessPart))
+Declaration(ObjectProperty(ns1:detects))
+Declaration(ObjectProperty(ns1:endTime))
+Declaration(ObjectProperty(ns1:featureOfInterest))
+Declaration(ObjectProperty(ns1:forProperty))
+Declaration(ObjectProperty(ns1:hasDeployment))
+Declaration(ObjectProperty(ns1:hasInput))
+Declaration(ObjectProperty(ns1:hasMeasurementCapability))
+Declaration(ObjectProperty(ns1:hasMeasurementProperty))
+Declaration(ObjectProperty(ns1:hasOperatingProperty))
+Declaration(ObjectProperty(ns1:hasOperatingRange))
+Declaration(ObjectProperty(ns1:hasOutput))
+Declaration(ObjectProperty(ns1:hasProperty))
+Declaration(ObjectProperty(ns1:hasSubSystem))
+Declaration(ObjectProperty(ns1:hasSurvivalProperty))
+Declaration(ObjectProperty(ns1:hasSurvivalRange))
+Declaration(ObjectProperty(ns1:implementedBy))
+Declaration(ObjectProperty(ns1:implements))
+Declaration(ObjectProperty(ns1:inCondition))
+Declaration(ObjectProperty(ns1:inDeployment))
+Declaration(ObjectProperty(ns1:isProducedBy))
+Declaration(ObjectProperty(ns1:isPropertyOf))
+Declaration(ObjectProperty(ns1:isProxyFor))
+Declaration(ObjectProperty(ns1:madeObservation))
+Declaration(ObjectProperty(ns1:observationResult))
+Declaration(ObjectProperty(ns1:observationResultTime))
+Declaration(ObjectProperty(ns1:observationSamplingTime))
+Declaration(ObjectProperty(ns1:observedBy))
+Declaration(ObjectProperty(ns1:observedProperty))
+Declaration(ObjectProperty(ns1:observes))
+Declaration(ObjectProperty(ns1:ofFeature))
+Declaration(ObjectProperty(ns1:onPlatform))
+Declaration(ObjectProperty(ns1:qualityOfObservation))
+Declaration(ObjectProperty(ns1:sensingMethodUsed))
+Declaration(ObjectProperty(ns1:startTime))
+Declaration(ObjectProperty(ns9:presents))
+Declaration(ObjectProperty(ns9:supports))
+Declaration(ObjectProperty(ns4:serviceParameter))
+Declaration(ObjectProperty(ns2:hasAccuracy))
+Declaration(ObjectProperty(ns2:hasAggregation))
+Declaration(ObjectProperty(ns2:hasAvailability))
+Declaration(ObjectProperty(ns2:hasBandWidthConsumption))
+Declaration(ObjectProperty(ns2:hasConstraint))
+Declaration(ObjectProperty(ns2:hasEnergyConsumption))
+Declaration(ObjectProperty(ns2:hasEventPayload))
+Declaration(ObjectProperty(ns2:hasExpression))
+Declaration(ObjectProperty(ns2:hasFilter))
+Declaration(ObjectProperty(ns2:hasFrequency))
+Declaration(ObjectProperty(ns2:hasLatency))
+Declaration(ObjectProperty(ns2:hasNFP))
+Declaration(ObjectProperty(ns2:hasPattern))
+Declaration(ObjectProperty(ns2:hasPreference))
+Declaration(ObjectProperty(ns2:hasPrice))
+Declaration(ObjectProperty(ns2:hasReliability))
+Declaration(ObjectProperty(ns2:hasSecurity))
+Declaration(ObjectProperty(ns2:hasSelection))
+Declaration(ObjectProperty(ns2:hasService))
+Declaration(ObjectProperty(ns2:hasSubPattern))
+Declaration(ObjectProperty(ns2:hasWindow))
+Declaration(ObjectProperty(ns2:onEvent))
+Declaration(ObjectProperty(ns2:onPayload))
+Declaration(ObjectProperty(ns2:onProperty))
+Declaration(ObjectProperty(ns2:selectedProperty))
+Declaration(ObjectProperty(ns8:hasFirstNode))
+Declaration(ObjectProperty(ns8:hasPlace))
+Declaration(ObjectProperty(ns8:hasSecondNode))
+Declaration(ObjectProperty(ns8:locatesIn))
+Declaration(ObjectProperty(ns3:actsFor))
+Declaration(ObjectProperty(ns3:actsThrough))
+Declaration(ObjectProperty(ns3:characterizes))
+Declaration(ObjectProperty(ns3:classifies))
+Declaration(ObjectProperty(ns3:conceptualizes))
+Declaration(ObjectProperty(ns3:concretelyExpresses))
+Declaration(ObjectProperty(ns3:coparticipatesWith))
+Declaration(ObjectProperty(ns3:covers))
+Declaration(ObjectProperty(ns3:defines))
+Declaration(ObjectProperty(ns3:definesRole))
+Declaration(ObjectProperty(ns3:definesTask))
+Declaration(ObjectProperty(ns3:describes))
+Declaration(ObjectProperty(ns3:directlyFollows))
+Declaration(ObjectProperty(ns3:directlyPrecedes))
+Declaration(ObjectProperty(ns3:executesTask))
+Declaration(ObjectProperty(ns3:expands))
+Declaration(ObjectProperty(ns3:expresses))
+Declaration(ObjectProperty(ns3:expressesConcept))
+Declaration(ObjectProperty(ns3:farFrom))
+Declaration(ObjectProperty(ns3:follows))
+Declaration(ObjectProperty(ns3:hasCommonBoundary))
+Declaration(ObjectProperty(ns3:hasComponent))
+Declaration(ObjectProperty(ns3:hasConstituent))
+Declaration(ObjectProperty(ns3:hasConstraint))
+Declaration(ObjectProperty(ns3:hasLocation))
+Declaration(ObjectProperty(ns3:hasMember))
+Declaration(ObjectProperty(ns3:hasParameter))
+Declaration(ObjectProperty(ns3:hasPart))
+Declaration(ObjectProperty(ns3:hasParticipant))
+Declaration(ObjectProperty(ns3:hasPostcondition))
+Declaration(ObjectProperty(ns3:hasPrecondition))
+Declaration(ObjectProperty(ns3:hasQuality))
+Declaration(ObjectProperty(ns3:hasRegion))
+Declaration(ObjectProperty(ns3:hasRole))
+Declaration(ObjectProperty(ns3:hasSetting))
+Declaration(ObjectProperty(ns3:hasTask))
+Declaration(ObjectProperty(ns3:includesAction))
+Declaration(ObjectProperty(ns3:includesAgent))
+Declaration(ObjectProperty(ns3:includesEvent))
+Declaration(ObjectProperty(ns3:includesObject))
+Declaration(ObjectProperty(ns3:includesTime))
+Declaration(ObjectProperty(ns3:introduces))
+Declaration(ObjectProperty(ns3:involvesAgent))
+Declaration(ObjectProperty(ns3:isAbout))
+Declaration(ObjectProperty(ns3:isActionIncludedIn))
+Declaration(ObjectProperty(ns3:isAgentIncludedIn))
+Declaration(ObjectProperty(ns3:isAgentInvolvedIn))
+Declaration(ObjectProperty(ns3:isCharacterizedBy))
+Declaration(ObjectProperty(ns3:isClassifiedBy))
+Declaration(ObjectProperty(ns3:isComponentOf))
+Declaration(ObjectProperty(ns3:isConceptExpressedBy))
+Declaration(ObjectProperty(ns3:isConceptUsedIn))
+Declaration(ObjectProperty(ns3:isConceptualizedBy))
+Declaration(ObjectProperty(ns3:isConcretelyExpressedBy))
+Declaration(ObjectProperty(ns3:isConstituentOf))
+Declaration(ObjectProperty(ns3:isConstraintFor))
+Declaration(ObjectProperty(ns3:isCoveredBy))
+Declaration(ObjectProperty(ns3:isDefinedIn))
+Declaration(ObjectProperty(ns3:isDescribedBy))
+Declaration(ObjectProperty(ns3:isEventIncludedIn))
+Declaration(ObjectProperty(ns3:isExecutedIn))
+Declaration(ObjectProperty(ns3:isExpandedIn))
+Declaration(ObjectProperty(ns3:isExpressedBy))
+Declaration(ObjectProperty(ns3:isIntroducedBy))
+Declaration(ObjectProperty(ns3:isLocationOf))
+Declaration(ObjectProperty(ns3:isMemberOf))
+Declaration(ObjectProperty(ns3:isObjectIncludedIn))
+Declaration(ObjectProperty(ns3:isObservableAt))
+Declaration(ObjectProperty(ns3:isParameterFor))
+Declaration(ObjectProperty(ns3:isParametrizedBy))
+Declaration(ObjectProperty(ns3:isPartOf))
+Declaration(ObjectProperty(ns3:isParticipantIn))
+Declaration(ObjectProperty(ns3:isPostconditionOf))
+Declaration(ObjectProperty(ns3:isPreconditionOf))
+Declaration(ObjectProperty(ns3:isQualityOf))
+Declaration(ObjectProperty(ns3:isRealizedBy))
+Declaration(ObjectProperty(ns3:isReferenceOf))
+Declaration(ObjectProperty(ns3:isReferenceOfInformationRealizedBy))
+Declaration(ObjectProperty(ns3:isRegionFor))
+Declaration(ObjectProperty(ns3:isRelatedToConcept))
+Declaration(ObjectProperty(ns3:isRelatedToDescription))
+Declaration(ObjectProperty(ns3:isRoleDefinedIn))
+Declaration(ObjectProperty(ns3:isRoleOf))
+Declaration(ObjectProperty(ns3:isSatisfiedBy))
+Declaration(ObjectProperty(ns3:isSettingFor))
+Declaration(ObjectProperty(ns3:isSpecializedBy))
+Declaration(ObjectProperty(ns3:isSubordinatedTo))
+Declaration(ObjectProperty(ns3:isSuperordinatedTo))
+Declaration(ObjectProperty(ns3:isTaskDefinedIn))
+Declaration(ObjectProperty(ns3:isTaskOf))
+Declaration(ObjectProperty(ns3:isTimeIncludedIn))
+Declaration(ObjectProperty(ns3:isTimeOfObservationOf))
+Declaration(ObjectProperty(ns3:isUnifiedBy))
+Declaration(ObjectProperty(ns3:nearTo))
+Declaration(ObjectProperty(ns3:overlaps))
+Declaration(ObjectProperty(ns3:parametrizes))
+Declaration(ObjectProperty(ns3:precedes))
+Declaration(ObjectProperty(ns3:realizes))
+Declaration(ObjectProperty(ns3:realizesInformationAbout))
+Declaration(ObjectProperty(ns3:satisfies))
+Declaration(ObjectProperty(ns3:specializes))
+Declaration(ObjectProperty(ns3:unifies))
+Declaration(ObjectProperty(ns3:usesConcept))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#describes>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasLocation>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasPart>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasParticipant>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasQuality>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasRegion>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#includesEvent>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#includesObject>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isDescribedBy>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isLocationOf>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isObjectIncludedIn>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isParticipantIn>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isQualityOf>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isRegionFor>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isSettingFor>))
+Declaration(ObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#satisfies>))
+Declaration(DataProperty(ns2:OWLDataProperty_00000000000000000000))
+Declaration(DataProperty(ns2:accuracyWeight))
+Declaration(DataProperty(ns2:availabilityWeight))
+Declaration(DataProperty(ns2:bandwidthConsumptionWeight))
+Declaration(DataProperty(ns2:energyConsumptionWeight))
+Declaration(DataProperty(ns2:hasCardinality))
+Declaration(DataProperty(ns2:hasInternalNodeID))
+Declaration(DataProperty(ns2:jmsService))
+Declaration(DataProperty(ns2:latencyWeight))
+Declaration(DataProperty(ns2:priceWeight))
+Declaration(DataProperty(ns2:reliabilityWeight))
+Declaration(DataProperty(ns2:securityWeight))
+Declaration(DataProperty(ns2:weight))
+Declaration(DataProperty(ns8:hasAvgSpeed))
+Declaration(DataProperty(ns8:hasLat))
+Declaration(DataProperty(ns8:hasLon))
+Declaration(DataProperty(ns8:hasMeasureTime))
+Declaration(DataProperty(ns8:hasTRID))
+Declaration(DataProperty(ns8:hasValue))
+Declaration(DataProperty(ns8:hasVehicleCount))
+Declaration(DataProperty(ns3:hasDataValue))
+Declaration(DataProperty(ns3:hasEventDate))
+Declaration(DataProperty(ns3:hasIntervalDate))
+Declaration(DataProperty(ns3:hasParameterDataValue))
+Declaration(DataProperty(ns3:hasProxy))
+Declaration(DataProperty(ns3:hasRegionDataValue))
+Declaration(DataProperty(<http://www.streamreasoning.org/ontologies/rsplab/citybench.owl#eventTime>))
+Declaration(AnnotationProperty(ns:license))
+Declaration(AnnotationProperty(ns1:hasValue))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:date))
+Declaration(AnnotationProperty(dc:identifier))
+Declaration(AnnotationProperty(dc:rights))
+Declaration(AnnotationProperty(dc:source))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(terms:created))
+Declaration(AnnotationProperty(terms:modified))
+Declaration(AnnotationProperty(ns7:hasQuantityValue))
+Declaration(AnnotationProperty(ns6:serviceCategory))
+Declaration(AnnotationProperty(ns6:serviceCategoryName))
+Declaration(AnnotationProperty(ns4:sParameter))
+Declaration(AnnotationProperty(ns4:serviceParameterName))
+Declaration(AnnotationProperty(ns2:hasAccuracy))
+Declaration(AnnotationProperty(ns2:hasAvailability))
+Declaration(AnnotationProperty(ns2:hasFrequency))
+Declaration(AnnotationProperty(ns2:hasLatency))
+Declaration(AnnotationProperty(ns2:hasPrice))
+Declaration(AnnotationProperty(ns2:hasReliability))
+Declaration(AnnotationProperty(ns2:hasSecurity))
+Declaration(AnnotationProperty(ns2:httpService))
+Declaration(AnnotationProperty(ns8:hasEndLatitude))
+Declaration(AnnotationProperty(ns8:hasEndLongitude))
+Declaration(AnnotationProperty(ns8:hasStartLatitude))
+Declaration(AnnotationProperty(ns8:hasStartLongitude))
+Declaration(AnnotationProperty(ns3:mappableTo))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
+Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(rdfs:seeAlso))
+Declaration(Datatype(xsd:date))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasAccuracy> (<http://www.insight-centre.org/ces#hasAccuracy>)
+
+AnnotationPropertyRange(ns2:hasAccuracy ns2:Accuracy)
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasAvailability> (<http://www.insight-centre.org/ces#hasAvailability>)
+
+AnnotationPropertyRange(ns2:hasAvailability ns2:Availability)
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasLatency> (<http://www.insight-centre.org/ces#hasLatency>)
+
+AnnotationPropertyRange(ns2:hasLatency ns2:Latency)
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasPrice> (<http://www.insight-centre.org/ces#hasPrice>)
+
+AnnotationPropertyRange(ns2:hasPrice ns2:Price)
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasReliability> (<http://www.insight-centre.org/ces#hasReliability>)
+
+AnnotationPropertyRange(ns2:hasReliability ns2:Reliability)
+
+# Annotation Property: <http://www.insight-centre.org/ces#hasSecurity> (<http://www.insight-centre.org/ces#hasSecurity>)
+
+AnnotationPropertyRange(ns2:hasSecurity ns2:Security)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#attachedSystem> (<http://purl.oclc.org/NET/ssnx/ssn#attachedSystem>)
+
+SubObjectPropertyOf(ns1:attachedSystem <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isLocationOf>)
+InverseObjectProperties(ns1:attachedSystem ns1:onPlatform)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform> (<http://purl.oclc.org/NET/ssnx/ssn#deployedOnPlatform>)
+
+SubObjectPropertyOf(ns1:deployedOnPlatform <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasParticipant>)
+InverseObjectProperties(ns1:deployedOnPlatform ns1:inDeployment)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#deployedSystem> (<http://purl.oclc.org/NET/ssnx/ssn#deployedSystem>)
+
+SubObjectPropertyOf(ns1:deployedSystem <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasParticipant>)
+InverseObjectProperties(ns1:deployedSystem ns1:hasDeployment)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart> (<http://purl.oclc.org/NET/ssnx/ssn#deploymentProcessPart>)
+
+SubObjectPropertyOf(ns1:deploymentProcessPart <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasPart>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#endTime> (<http://purl.oclc.org/NET/ssnx/ssn#endTime>)
+
+SubObjectPropertyOf(ns1:endTime <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasRegion>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest> (<http://purl.oclc.org/NET/ssnx/ssn#featureOfInterest>)
+
+SubObjectPropertyOf(ns1:featureOfInterest <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isSettingFor>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasDeployment> (<http://purl.oclc.org/NET/ssnx/ssn#hasDeployment>)
+
+SubObjectPropertyOf(ns1:hasDeployment <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isParticipantIn>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability> (<http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementCapability>)
+
+SubObjectPropertyOf(ns1:hasMeasurementCapability ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty> (<http://purl.oclc.org/NET/ssnx/ssn#hasMeasurementProperty>)
+
+SubObjectPropertyOf(ns1:hasMeasurementProperty ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty> (<http://purl.oclc.org/NET/ssnx/ssn#hasOperatingProperty>)
+
+SubObjectPropertyOf(ns1:hasOperatingProperty ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange> (<http://purl.oclc.org/NET/ssnx/ssn#hasOperatingRange>)
+
+SubObjectPropertyOf(ns1:hasOperatingRange ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasProperty> (<http://purl.oclc.org/NET/ssnx/ssn#hasProperty>)
+
+SubObjectPropertyOf(ns1:hasProperty <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasQuality>)
+InverseObjectProperties(ns1:hasProperty ns1:isPropertyOf)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem> (<http://purl.oclc.org/NET/ssnx/ssn#hasSubSystem>)
+
+SubObjectPropertyOf(ns1:hasSubSystem <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasPart>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty> (<http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalProperty>)
+
+SubObjectPropertyOf(ns1:hasSurvivalProperty ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange> (<http://purl.oclc.org/NET/ssnx/ssn#hasSurvivalRange>)
+
+SubObjectPropertyOf(ns1:hasSurvivalRange ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#implementedBy> (<http://purl.oclc.org/NET/ssnx/ssn#implementedBy>)
+
+SubObjectPropertyOf(ns1:implementedBy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#describes>)
+InverseObjectProperties(ns1:implementedBy ns1:implements)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#implements> (<http://purl.oclc.org/NET/ssnx/ssn#implements>)
+
+SubObjectPropertyOf(ns1:implements <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isDescribedBy>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#inDeployment> (<http://purl.oclc.org/NET/ssnx/ssn#inDeployment>)
+
+SubObjectPropertyOf(ns1:inDeployment <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isParticipantIn>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf> (<http://purl.oclc.org/NET/ssnx/ssn#isPropertyOf>)
+
+SubObjectPropertyOf(ns1:isPropertyOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isQualityOf>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#madeObservation> (<http://purl.oclc.org/NET/ssnx/ssn#madeObservation>)
+
+SubObjectPropertyOf(ns1:madeObservation <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isObjectIncludedIn>)
+InverseObjectProperties(ns1:madeObservation ns1:observedBy)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#observationResult> (<http://purl.oclc.org/NET/ssnx/ssn#observationResult>)
+
+SubObjectPropertyOf(ns1:observationResult <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isSettingFor>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#observationResultTime> (<http://purl.oclc.org/NET/ssnx/ssn#observationResultTime>)
+
+SubObjectPropertyOf(ns1:observationResultTime <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasRegion>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime> (<http://purl.oclc.org/NET/ssnx/ssn#observationSamplingTime>)
+
+SubObjectPropertyOf(ns1:observationSamplingTime <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasRegion>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#observedBy> (<http://purl.oclc.org/NET/ssnx/ssn#observedBy>)
+
+SubObjectPropertyOf(ns1:observedBy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#includesObject>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#observedProperty> (<http://purl.oclc.org/NET/ssnx/ssn#observedProperty>)
+
+SubObjectPropertyOf(ns1:observedProperty <http://www.loa.istc.cnr.it/ontologies/DUL.owl#isSettingFor>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#onPlatform> (<http://purl.oclc.org/NET/ssnx/ssn#onPlatform>)
+
+SubObjectPropertyOf(ns1:onPlatform <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasLocation>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation> (<http://purl.oclc.org/NET/ssnx/ssn#qualityOfObservation>)
+
+SubObjectPropertyOf(ns1:qualityOfObservation ns1:hasProperty)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed> (<http://purl.oclc.org/NET/ssnx/ssn#sensingMethodUsed>)
+
+SubObjectPropertyOf(ns1:sensingMethodUsed <http://www.loa.istc.cnr.it/ontologies/DUL.owl#satisfies>)
+
+# Object Property: <http://purl.oclc.org/NET/ssnx/ssn#startTime> (<http://purl.oclc.org/NET/ssnx/ssn#startTime>)
+
+SubObjectPropertyOf(ns1:startTime <http://www.loa.istc.cnr.it/ontologies/DUL.owl#hasRegion>)
+
+# Object Property: <http://www.insight-centre.org/ces#hasAccuracy> (<http://www.insight-centre.org/ces#hasAccuracy>)
+
+SubObjectPropertyOf(ns2:hasAccuracy ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasAccuracy ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasAggregation> (<http://www.insight-centre.org/ces#hasAggregation>)
+
+SubObjectPropertyOf(ns2:hasAggregation ns2:hasPattern)
+ObjectPropertyDomain(ns2:hasAggregation ns2:EventPattern)
+ObjectPropertyRange(ns2:hasAggregation ns2:Aggregation)
+
+# Object Property: <http://www.insight-centre.org/ces#hasAvailability> (<http://www.insight-centre.org/ces#hasAvailability>)
+
+SubObjectPropertyOf(ns2:hasAvailability ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasAvailability ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasBandWidthConsumption> (<http://www.insight-centre.org/ces#hasBandWidthConsumption>)
+
+SubObjectPropertyOf(ns2:hasBandWidthConsumption ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasBandWidthConsumption ns2:EventProfile)
+ObjectPropertyRange(ns2:hasBandWidthConsumption ns2:BandWidthConsumption)
+
+# Object Property: <http://www.insight-centre.org/ces#hasConstraint> (<http://www.insight-centre.org/ces#hasConstraint>)
+
+ObjectPropertyDomain(ns2:hasConstraint ns2:EventProfile)
+ObjectPropertyRange(ns2:hasConstraint ns2:Constraint)
+
+# Object Property: <http://www.insight-centre.org/ces#hasEnergyConsumption> (<http://www.insight-centre.org/ces#hasEnergyConsumption>)
+
+SubObjectPropertyOf(ns2:hasEnergyConsumption ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasEnergyConsumption ns2:EventProfile)
+ObjectPropertyRange(ns2:hasEnergyConsumption ns2:EnergyConsumption)
+
+# Object Property: <http://www.insight-centre.org/ces#hasEventPayload> (<http://www.insight-centre.org/ces#hasEventPayload>)
+
+ObjectPropertyDomain(ns2:hasEventPayload ns2:EventProfile)
+ObjectPropertyRange(ns2:hasEventPayload ns2:EventPayload)
+
+# Object Property: <http://www.insight-centre.org/ces#hasExpression> (<http://www.insight-centre.org/ces#hasExpression>)
+
+ObjectPropertyDomain(ns2:hasExpression ns2:Constraint)
+
+# Object Property: <http://www.insight-centre.org/ces#hasFilter> (<http://www.insight-centre.org/ces#hasFilter>)
+
+SubObjectPropertyOf(ns2:hasFilter ns2:hasPattern)
+ObjectPropertyDomain(ns2:hasFilter ns2:EventPattern)
+ObjectPropertyRange(ns2:hasFilter ns2:Filter)
+
+# Object Property: <http://www.insight-centre.org/ces#hasFrequency> (<http://www.insight-centre.org/ces#hasFrequency>)
+
+SubObjectPropertyOf(ns2:hasFrequency ns2:hasNFP)
+
+# Object Property: <http://www.insight-centre.org/ces#hasLatency> (<http://www.insight-centre.org/ces#hasLatency>)
+
+SubObjectPropertyOf(ns2:hasLatency ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasLatency ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasNFP> (<http://www.insight-centre.org/ces#hasNFP>)
+
+SubObjectPropertyOf(ns2:hasNFP ns4:serviceParameter)
+ObjectPropertyDomain(ns2:hasNFP ns2:EventProfile)
+ObjectPropertyRange(ns2:hasNFP ns2:NFP)
+
+# Object Property: <http://www.insight-centre.org/ces#hasPattern> (<http://www.insight-centre.org/ces#hasPattern>)
+
+ObjectPropertyDomain(ns2:hasPattern ns2:EventPattern)
+ObjectPropertyDomain(ns2:hasPattern ns2:EventProfile)
+ObjectPropertyRange(ns2:hasPattern ns2:EventPattern)
+
+# Object Property: <http://www.insight-centre.org/ces#hasPreference> (<http://www.insight-centre.org/ces#hasPreference>)
+
+ObjectPropertyDomain(ns2:hasPreference ns2:EventProfile)
+ObjectPropertyRange(ns2:hasPreference ns2:Preference)
+
+# Object Property: <http://www.insight-centre.org/ces#hasPrice> (<http://www.insight-centre.org/ces#hasPrice>)
+
+SubObjectPropertyOf(ns2:hasPrice ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasPrice ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasReliability> (<http://www.insight-centre.org/ces#hasReliability>)
+
+SubObjectPropertyOf(ns2:hasReliability ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasReliability ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasSecurity> (<http://www.insight-centre.org/ces#hasSecurity>)
+
+SubObjectPropertyOf(ns2:hasSecurity ns2:hasNFP)
+ObjectPropertyDomain(ns2:hasSecurity ns2:EventProfile)
+
+# Object Property: <http://www.insight-centre.org/ces#hasSelection> (<http://www.insight-centre.org/ces#hasSelection>)
+
+SubObjectPropertyOf(ns2:hasSelection ns2:hasPattern)
+ObjectPropertyRange(ns2:hasSelection ns2:Selection)
+
+# Object Property: <http://www.insight-centre.org/ces#hasService> (<http://www.insight-centre.org/ces#hasService>)
+
+ObjectPropertyDomain(ns2:hasService ns2:ServiceNode)
+ObjectPropertyRange(ns2:hasService ns2:EventService)
+
+# Object Property: <http://www.insight-centre.org/ces#hasSubPattern> (<http://www.insight-centre.org/ces#hasSubPattern>)
+
+ObjectPropertyDomain(ns2:hasSubPattern ns2:EventPattern)
+ObjectPropertyRange(ns2:hasSubPattern ns2:EventPattern)
+ObjectPropertyRange(ns2:hasSubPattern ns2:EventService)
+
+# Object Property: <http://www.insight-centre.org/ces#hasWindow> (<http://www.insight-centre.org/ces#hasWindow>)
+
+SubObjectPropertyOf(ns2:hasWindow owl:topObjectProperty)
+ObjectPropertyDomain(ns2:hasWindow ns2:EventPattern)
+ObjectPropertyRange(ns2:hasWindow ns2:SlidingWindow)
+
+# Object Property: <http://www.insight-centre.org/ces#onEvent> (<http://www.insight-centre.org/ces#onEvent>)
+
+ObjectPropertyDomain(ns2:onEvent ns2:Filter)
+ObjectPropertyRange(ns2:onEvent ns2:EventService)
+
+# Object Property: <http://www.insight-centre.org/ces#onPayload> (<http://www.insight-centre.org/ces#onPayload>)
+
+ObjectPropertyDomain(ns2:onPayload ns2:Filter)
+ObjectPropertyRange(ns2:onPayload ns2:EventPayload)
+
+# Object Property: <http://www.insight-centre.org/ces#onProperty> (<http://www.insight-centre.org/ces#onProperty>)
+
+ObjectPropertyDomain(ns2:onProperty ns2:Constraint)
+ObjectPropertyRange(ns2:onProperty ns4:ServiceParameter)
+
+# Object Property: <http://www.insight-centre.org/ces#selectedProperty> (<http://www.insight-centre.org/ces#selectedProperty>)
+
+ObjectPropertyDomain(ns2:selectedProperty ns2:Selection)
+ObjectPropertyRange(ns2:selectedProperty ns1:Property)
+
+# Object Property: <http://www.insight-centre.org/citytraffic#hasFirstNode> (<http://www.insight-centre.org/citytraffic#hasFirstNode>)
+
+SubObjectPropertyOf(ns8:hasFirstNode ns8:hasPlace)
+ObjectPropertyRange(ns8:hasFirstNode ns8:Node)
+
+# Object Property: <http://www.insight-centre.org/citytraffic#hasPlace> (<http://www.insight-centre.org/citytraffic#hasPlace>)
+
+ObjectPropertyRange(ns8:hasPlace ns8:Place)
+
+# Object Property: <http://www.insight-centre.org/citytraffic#hasSecondNode> (<http://www.insight-centre.org/citytraffic#hasSecondNode>)
+
+SubObjectPropertyOf(ns8:hasSecondNode ns8:hasPlace)
+ObjectPropertyRange(ns8:hasSecondNode ns8:Node)
+
+# Object Property: <http://www.insight-centre.org/citytraffic#locatesIn> (<http://www.insight-centre.org/citytraffic#locatesIn>)
+
+TransitiveObjectProperty(ns8:locatesIn)
+ObjectPropertyDomain(ns8:locatesIn ns8:Place)
+ObjectPropertyRange(ns8:locatesIn ns8:Place)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#actsFor> (<http://www.loa-cnr.it/ontologies/DUL.owl#actsFor>)
+
+InverseObjectProperties(ns3:actsFor ns3:actsThrough)
+ObjectPropertyDomain(ns3:actsFor ns3:Agent)
+ObjectPropertyRange(ns3:actsFor ns3:SocialAgent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough> (<http://www.loa-cnr.it/ontologies/DUL.owl#actsThrough>)
+
+ObjectPropertyDomain(ns3:actsThrough ns3:SocialAgent)
+ObjectPropertyRange(ns3:actsThrough ns3:Agent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#characterizes> (<http://www.loa-cnr.it/ontologies/DUL.owl#characterizes>)
+
+InverseObjectProperties(ns3:characterizes ns3:isCharacterizedBy)
+ObjectPropertyDomain(ns3:characterizes ns3:Concept)
+ObjectPropertyRange(ns3:characterizes ns3:Collection)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#classifies> (<http://www.loa-cnr.it/ontologies/DUL.owl#classifies>)
+
+InverseObjectProperties(ns3:classifies ns3:isClassifiedBy)
+ObjectPropertyDomain(ns3:classifies ns3:Concept)
+ObjectPropertyRange(ns3:classifies ns3:Entity)
+ObjectPropertyRange(ns3:classifies <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes> (<http://www.loa-cnr.it/ontologies/DUL.owl#conceptualizes>)
+
+InverseObjectProperties(ns3:conceptualizes ns3:isConceptualizedBy)
+ObjectPropertyDomain(ns3:conceptualizes ns3:Agent)
+ObjectPropertyRange(ns3:conceptualizes ns3:SocialObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses> (<http://www.loa-cnr.it/ontologies/DUL.owl#concretelyExpresses>)
+
+InverseObjectProperties(ns3:concretelyExpresses ns3:isConcretelyExpressedBy)
+ObjectPropertyDomain(ns3:concretelyExpresses ns3:InformationRealization)
+ObjectPropertyRange(ns3:concretelyExpresses ns3:SocialObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith> (<http://www.loa-cnr.it/ontologies/DUL.owl#coparticipatesWith>)
+
+InverseObjectProperties(ns3:coparticipatesWith ns3:coparticipatesWith)
+SymmetricObjectProperty(ns3:coparticipatesWith)
+ObjectPropertyDomain(ns3:coparticipatesWith ns3:Object)
+ObjectPropertyRange(ns3:coparticipatesWith ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#covers> (<http://www.loa-cnr.it/ontologies/DUL.owl#covers>)
+
+InverseObjectProperties(ns3:covers ns3:isCoveredBy)
+ObjectPropertyDomain(ns3:covers ns3:Concept)
+ObjectPropertyRange(ns3:covers ns3:Collection)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#defines> (<http://www.loa-cnr.it/ontologies/DUL.owl#defines>)
+
+SubObjectPropertyOf(ns3:defines ns3:usesConcept)
+InverseObjectProperties(ns3:defines ns3:isDefinedIn)
+ObjectPropertyDomain(ns3:defines ns3:Description)
+ObjectPropertyRange(ns3:defines ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#definesRole> (<http://www.loa-cnr.it/ontologies/DUL.owl#definesRole>)
+
+SubObjectPropertyOf(ns3:definesRole ns3:defines)
+InverseObjectProperties(ns3:definesRole ns3:isRoleDefinedIn)
+ObjectPropertyDomain(ns3:definesRole ns3:Description)
+ObjectPropertyRange(ns3:definesRole ns3:Role)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#definesTask> (<http://www.loa-cnr.it/ontologies/DUL.owl#definesTask>)
+
+SubObjectPropertyOf(ns3:definesTask ns3:defines)
+InverseObjectProperties(ns3:definesTask ns3:isTaskDefinedIn)
+ObjectPropertyDomain(ns3:definesTask ns3:Description)
+ObjectPropertyRange(ns3:definesTask ns3:Task)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#describes> (<http://www.loa-cnr.it/ontologies/DUL.owl#describes>)
+
+InverseObjectProperties(ns3:describes ns3:isDescribedBy)
+ObjectPropertyDomain(ns3:describes ns3:Description)
+ObjectPropertyRange(ns3:describes ns3:Entity)
+ObjectPropertyRange(ns3:describes <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows> (<http://www.loa-cnr.it/ontologies/DUL.owl#directlyFollows>)
+
+SubObjectPropertyOf(ns3:directlyFollows ns3:follows)
+InverseObjectProperties(ns3:directlyFollows ns3:directlyPrecedes)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes> (<http://www.loa-cnr.it/ontologies/DUL.owl#directlyPrecedes>)
+
+SubObjectPropertyOf(ns3:directlyPrecedes ns3:precedes)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#executesTask> (<http://www.loa-cnr.it/ontologies/DUL.owl#executesTask>)
+
+SubObjectPropertyOf(ns3:executesTask ns3:isClassifiedBy)
+InverseObjectProperties(ns3:executesTask ns3:isExecutedIn)
+ObjectPropertyDomain(ns3:executesTask ns3:Action)
+ObjectPropertyRange(ns3:executesTask ns3:Task)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#expands> (<http://www.loa-cnr.it/ontologies/DUL.owl#expands>)
+
+SubObjectPropertyOf(ns3:expands ns3:isRelatedToDescription)
+InverseObjectProperties(ns3:expands ns3:isExpandedIn)
+ObjectPropertyDomain(ns3:expands ns3:Description)
+ObjectPropertyRange(ns3:expands ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#expresses> (<http://www.loa-cnr.it/ontologies/DUL.owl#expresses>)
+
+InverseObjectProperties(ns3:expresses ns3:isExpressedBy)
+ObjectPropertyDomain(ns3:expresses ns3:InformationObject)
+ObjectPropertyRange(ns3:expresses ns3:SocialObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept> (<http://www.loa-cnr.it/ontologies/DUL.owl#expressesConcept>)
+
+SubObjectPropertyOf(ns3:expressesConcept ns3:expresses)
+InverseObjectProperties(ns3:expressesConcept ns3:isConceptExpressedBy)
+ObjectPropertyDomain(ns3:expressesConcept ns3:InformationObject)
+ObjectPropertyRange(ns3:expressesConcept ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#farFrom> (<http://www.loa-cnr.it/ontologies/DUL.owl#farFrom>)
+
+InverseObjectProperties(ns3:farFrom ns3:farFrom)
+SymmetricObjectProperty(ns3:farFrom)
+ObjectPropertyDomain(ns3:farFrom ns3:Entity)
+ObjectPropertyDomain(ns3:farFrom <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:farFrom ns3:Entity)
+ObjectPropertyRange(ns3:farFrom <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#follows> (<http://www.loa-cnr.it/ontologies/DUL.owl#follows>)
+
+InverseObjectProperties(ns3:follows ns3:precedes)
+TransitiveObjectProperty(ns3:follows)
+ObjectPropertyDomain(ns3:follows ns3:Entity)
+ObjectPropertyDomain(ns3:follows <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:follows ns3:Entity)
+ObjectPropertyRange(ns3:follows <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasCommonBoundary>)
+
+InverseObjectProperties(ns3:hasCommonBoundary ns3:hasCommonBoundary)
+SymmetricObjectProperty(ns3:hasCommonBoundary)
+ObjectPropertyDomain(ns3:hasCommonBoundary ns3:Entity)
+ObjectPropertyDomain(ns3:hasCommonBoundary <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasCommonBoundary ns3:Entity)
+ObjectPropertyRange(ns3:hasCommonBoundary <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasComponent>)
+
+SubObjectPropertyOf(ns3:hasComponent ns3:hasPart)
+InverseObjectProperties(ns3:hasComponent ns3:isComponentOf)
+ObjectPropertyDomain(ns3:hasComponent ns3:Object)
+ObjectPropertyRange(ns3:hasComponent ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasConstituent>)
+
+InverseObjectProperties(ns3:hasConstituent ns3:isConstituentOf)
+ObjectPropertyDomain(ns3:hasConstituent ns3:Entity)
+ObjectPropertyDomain(ns3:hasConstituent <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasConstituent ns3:Entity)
+ObjectPropertyRange(ns3:hasConstituent <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasConstraint>)
+
+SubObjectPropertyOf(ns3:hasConstraint ns3:isClassifiedBy)
+InverseObjectProperties(ns3:hasConstraint ns3:isConstraintFor)
+ObjectPropertyDomain(ns3:hasConstraint ns3:Entity)
+ObjectPropertyDomain(ns3:hasConstraint <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasConstraint ns3:Parameter)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasLocation>)
+
+InverseObjectProperties(ns3:hasLocation ns3:isLocationOf)
+ObjectPropertyDomain(ns3:hasLocation ns3:Entity)
+ObjectPropertyDomain(ns3:hasLocation <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasLocation ns3:Entity)
+ObjectPropertyRange(ns3:hasLocation <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasMember> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasMember>)
+
+InverseObjectProperties(ns3:hasMember ns3:isMemberOf)
+ObjectPropertyDomain(ns3:hasMember ns3:Collection)
+ObjectPropertyRange(ns3:hasMember ns3:Entity)
+ObjectPropertyRange(ns3:hasMember <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasParameter> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasParameter>)
+
+SubObjectPropertyOf(ns3:hasParameter ns3:isRelatedToConcept)
+InverseObjectProperties(ns3:hasParameter ns3:isParameterFor)
+ObjectPropertyDomain(ns3:hasParameter ns3:Concept)
+ObjectPropertyRange(ns3:hasParameter ns3:Parameter)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasPart> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasPart>)
+
+InverseObjectProperties(ns3:hasPart ns3:isPartOf)
+TransitiveObjectProperty(ns3:hasPart)
+ObjectPropertyDomain(ns3:hasPart ns3:Entity)
+ObjectPropertyDomain(ns3:hasPart <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasPart ns3:Entity)
+ObjectPropertyRange(ns3:hasPart <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasParticipant>)
+
+InverseObjectProperties(ns3:hasParticipant ns3:isParticipantIn)
+ObjectPropertyDomain(ns3:hasParticipant ns3:Event)
+ObjectPropertyRange(ns3:hasParticipant ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasPostcondition> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasPostcondition>)
+
+SubObjectPropertyOf(ns3:hasPostcondition ns3:directlyPrecedes)
+InverseObjectProperties(ns3:hasPostcondition ns3:isPostconditionOf)
+ObjectPropertyDomain(ns3:hasPostcondition ns3:Situation)
+ObjectPropertyRange(ns3:hasPostcondition ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasPrecondition>)
+
+SubObjectPropertyOf(ns3:hasPrecondition ns3:directlyFollows)
+InverseObjectProperties(ns3:hasPrecondition ns3:isPreconditionOf)
+ObjectPropertyDomain(ns3:hasPrecondition ns3:Situation)
+ObjectPropertyRange(ns3:hasPrecondition ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasQuality>)
+
+InverseObjectProperties(ns3:hasQuality ns3:isQualityOf)
+ObjectPropertyDomain(ns3:hasQuality ns3:Entity)
+ObjectPropertyDomain(ns3:hasQuality <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasQuality ns3:Quality)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasRegion>)
+
+InverseObjectProperties(ns3:hasRegion ns3:isRegionFor)
+ObjectPropertyDomain(ns3:hasRegion ns3:Entity)
+ObjectPropertyDomain(ns3:hasRegion <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasRegion ns3:Region)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasRole> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasRole>)
+
+SubObjectPropertyOf(ns3:hasRole ns3:isClassifiedBy)
+InverseObjectProperties(ns3:hasRole ns3:isRoleOf)
+ObjectPropertyDomain(ns3:hasRole ns3:Object)
+ObjectPropertyRange(ns3:hasRole ns3:Role)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasSetting>)
+
+InverseObjectProperties(ns3:hasSetting ns3:isSettingFor)
+ObjectPropertyDomain(ns3:hasSetting ns3:Entity)
+ObjectPropertyDomain(ns3:hasSetting <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:hasSetting ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasTask> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasTask>)
+
+SubObjectPropertyOf(ns3:hasTask ns3:isRelatedToConcept)
+InverseObjectProperties(ns3:hasTask ns3:isTaskOf)
+ObjectPropertyDomain(ns3:hasTask ns3:Role)
+ObjectPropertyRange(ns3:hasTask ns3:Task)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#includesAction> (<http://www.loa-cnr.it/ontologies/DUL.owl#includesAction>)
+
+SubObjectPropertyOf(ns3:includesAction ns3:includesEvent)
+InverseObjectProperties(ns3:includesAction ns3:isActionIncludedIn)
+ObjectPropertyDomain(ns3:includesAction ns3:Situation)
+ObjectPropertyRange(ns3:includesAction ns3:Action)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent> (<http://www.loa-cnr.it/ontologies/DUL.owl#includesAgent>)
+
+SubObjectPropertyOf(ns3:includesAgent ns3:includesObject)
+InverseObjectProperties(ns3:includesAgent ns3:isAgentIncludedIn)
+ObjectPropertyDomain(ns3:includesAgent ns3:Situation)
+ObjectPropertyRange(ns3:includesAgent ns3:Agent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent> (<http://www.loa-cnr.it/ontologies/DUL.owl#includesEvent>)
+
+SubObjectPropertyOf(ns3:includesEvent ns3:isSettingFor)
+InverseObjectProperties(ns3:includesEvent ns3:isEventIncludedIn)
+ObjectPropertyDomain(ns3:includesEvent ns3:Situation)
+ObjectPropertyRange(ns3:includesEvent ns3:Event)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#includesObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#includesObject>)
+
+SubObjectPropertyOf(ns3:includesObject ns3:isSettingFor)
+InverseObjectProperties(ns3:includesObject ns3:isObjectIncludedIn)
+ObjectPropertyDomain(ns3:includesObject ns3:Situation)
+ObjectPropertyRange(ns3:includesObject ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#includesTime> (<http://www.loa-cnr.it/ontologies/DUL.owl#includesTime>)
+
+SubObjectPropertyOf(ns3:includesTime ns3:isSettingFor)
+InverseObjectProperties(ns3:includesTime ns3:isTimeIncludedIn)
+ObjectPropertyDomain(ns3:includesTime ns3:Situation)
+ObjectPropertyRange(ns3:includesTime ns3:TimeInterval)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#introduces> (<http://www.loa-cnr.it/ontologies/DUL.owl#introduces>)
+
+InverseObjectProperties(ns3:introduces ns3:isIntroducedBy)
+ObjectPropertyDomain(ns3:introduces ns3:Description)
+ObjectPropertyRange(ns3:introduces ns3:SocialAgent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent> (<http://www.loa-cnr.it/ontologies/DUL.owl#involvesAgent>)
+
+SubObjectPropertyOf(ns3:involvesAgent ns3:hasParticipant)
+InverseObjectProperties(ns3:involvesAgent ns3:isAgentInvolvedIn)
+ObjectPropertyDomain(ns3:involvesAgent ns3:Event)
+ObjectPropertyRange(ns3:involvesAgent ns3:Agent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isAbout> (<http://www.loa-cnr.it/ontologies/DUL.owl#isAbout>)
+
+InverseObjectProperties(ns3:isAbout ns3:isReferenceOf)
+ObjectPropertyDomain(ns3:isAbout ns3:InformationObject)
+ObjectPropertyRange(ns3:isAbout ns3:Entity)
+ObjectPropertyRange(ns3:isAbout <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isActionIncludedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isActionIncludedIn>)
+
+SubObjectPropertyOf(ns3:isActionIncludedIn ns3:isEventIncludedIn)
+ObjectPropertyDomain(ns3:isActionIncludedIn ns3:Action)
+ObjectPropertyRange(ns3:isActionIncludedIn ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isAgentIncludedIn>)
+
+SubObjectPropertyOf(ns3:isAgentIncludedIn ns3:isObjectIncludedIn)
+ObjectPropertyDomain(ns3:isAgentIncludedIn ns3:Agent)
+ObjectPropertyRange(ns3:isAgentIncludedIn ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isAgentInvolvedIn>)
+
+SubObjectPropertyOf(ns3:isAgentInvolvedIn ns3:isParticipantIn)
+ObjectPropertyDomain(ns3:isAgentInvolvedIn ns3:Agent)
+ObjectPropertyRange(ns3:isAgentInvolvedIn ns3:Event)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isCharacterizedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isCharacterizedBy>)
+
+ObjectPropertyDomain(ns3:isCharacterizedBy ns3:Collection)
+ObjectPropertyRange(ns3:isCharacterizedBy ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isClassifiedBy>)
+
+ObjectPropertyDomain(ns3:isClassifiedBy ns3:Entity)
+ObjectPropertyDomain(ns3:isClassifiedBy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isClassifiedBy ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isComponentOf>)
+
+SubObjectPropertyOf(ns3:isComponentOf ns3:isPartOf)
+ObjectPropertyDomain(ns3:isComponentOf ns3:Object)
+ObjectPropertyRange(ns3:isComponentOf ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConceptExpressedBy>)
+
+SubObjectPropertyOf(ns3:isConceptExpressedBy ns3:isExpressedBy)
+ObjectPropertyDomain(ns3:isConceptExpressedBy ns3:Concept)
+ObjectPropertyRange(ns3:isConceptExpressedBy ns3:InformationObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConceptUsedIn>)
+
+InverseObjectProperties(ns3:isConceptUsedIn ns3:usesConcept)
+ObjectPropertyDomain(ns3:isConceptUsedIn ns3:Concept)
+ObjectPropertyRange(ns3:isConceptUsedIn ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConceptualizedBy>)
+
+ObjectPropertyDomain(ns3:isConceptualizedBy ns3:SocialObject)
+ObjectPropertyRange(ns3:isConceptualizedBy ns3:Agent)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConcretelyExpressedBy>)
+
+ObjectPropertyDomain(ns3:isConcretelyExpressedBy ns3:SocialObject)
+ObjectPropertyRange(ns3:isConcretelyExpressedBy ns3:InformationRealization)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConstituentOf>)
+
+ObjectPropertyDomain(ns3:isConstituentOf ns3:Entity)
+ObjectPropertyDomain(ns3:isConstituentOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isConstituentOf ns3:Entity)
+ObjectPropertyRange(ns3:isConstituentOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor> (<http://www.loa-cnr.it/ontologies/DUL.owl#isConstraintFor>)
+
+SubObjectPropertyOf(ns3:isConstraintFor ns3:classifies)
+ObjectPropertyDomain(ns3:isConstraintFor ns3:Parameter)
+ObjectPropertyRange(ns3:isConstraintFor ns3:Entity)
+ObjectPropertyRange(ns3:isConstraintFor <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isCoveredBy>)
+
+ObjectPropertyDomain(ns3:isCoveredBy ns3:Collection)
+ObjectPropertyRange(ns3:isCoveredBy ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isDefinedIn>)
+
+SubObjectPropertyOf(ns3:isDefinedIn ns3:isConceptUsedIn)
+ObjectPropertyDomain(ns3:isDefinedIn ns3:Concept)
+ObjectPropertyRange(ns3:isDefinedIn ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isDescribedBy>)
+
+ObjectPropertyDomain(ns3:isDescribedBy ns3:Entity)
+ObjectPropertyDomain(ns3:isDescribedBy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isDescribedBy ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isEventIncludedIn>)
+
+SubObjectPropertyOf(ns3:isEventIncludedIn ns3:hasSetting)
+ObjectPropertyDomain(ns3:isEventIncludedIn ns3:Event)
+ObjectPropertyRange(ns3:isEventIncludedIn ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isExecutedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isExecutedIn>)
+
+SubObjectPropertyOf(ns3:isExecutedIn ns3:classifies)
+ObjectPropertyDomain(ns3:isExecutedIn ns3:Task)
+ObjectPropertyRange(ns3:isExecutedIn ns3:Action)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isExpandedIn>)
+
+SubObjectPropertyOf(ns3:isExpandedIn ns3:isRelatedToDescription)
+ObjectPropertyDomain(ns3:isExpandedIn ns3:Description)
+ObjectPropertyRange(ns3:isExpandedIn ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isExpressedBy>)
+
+ObjectPropertyDomain(ns3:isExpressedBy ns3:SocialObject)
+ObjectPropertyRange(ns3:isExpressedBy ns3:InformationObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isIntroducedBy>)
+
+ObjectPropertyDomain(ns3:isIntroducedBy ns3:SocialAgent)
+ObjectPropertyRange(ns3:isIntroducedBy ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isLocationOf>)
+
+ObjectPropertyDomain(ns3:isLocationOf ns3:Entity)
+ObjectPropertyDomain(ns3:isLocationOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isLocationOf ns3:Entity)
+ObjectPropertyRange(ns3:isLocationOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isMemberOf>)
+
+ObjectPropertyDomain(ns3:isMemberOf ns3:Entity)
+ObjectPropertyDomain(ns3:isMemberOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isMemberOf ns3:Collection)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isObjectIncludedIn>)
+
+SubObjectPropertyOf(ns3:isObjectIncludedIn ns3:hasSetting)
+ObjectPropertyDomain(ns3:isObjectIncludedIn ns3:Object)
+ObjectPropertyRange(ns3:isObjectIncludedIn ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt> (<http://www.loa-cnr.it/ontologies/DUL.owl#isObservableAt>)
+
+SubObjectPropertyOf(ns3:isObservableAt ns3:hasRegion)
+InverseObjectProperties(ns3:isObservableAt ns3:isTimeOfObservationOf)
+ObjectPropertyDomain(ns3:isObservableAt ns3:Entity)
+ObjectPropertyDomain(ns3:isObservableAt <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isObservableAt ns3:TimeInterval)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor> (<http://www.loa-cnr.it/ontologies/DUL.owl#isParameterFor>)
+
+SubObjectPropertyOf(ns3:isParameterFor ns3:isRelatedToConcept)
+ObjectPropertyDomain(ns3:isParameterFor ns3:Parameter)
+ObjectPropertyRange(ns3:isParameterFor ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isParametrizedBy>)
+
+SubObjectPropertyOf(ns3:isParametrizedBy ns3:isClassifiedBy)
+InverseObjectProperties(ns3:isParametrizedBy ns3:parametrizes)
+ObjectPropertyDomain(ns3:isParametrizedBy ns3:Region)
+ObjectPropertyRange(ns3:isParametrizedBy ns3:Parameter)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isPartOf>)
+
+TransitiveObjectProperty(ns3:isPartOf)
+ObjectPropertyDomain(ns3:isPartOf ns3:Entity)
+ObjectPropertyDomain(ns3:isPartOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isPartOf ns3:Entity)
+ObjectPropertyRange(ns3:isPartOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isParticipantIn>)
+
+ObjectPropertyDomain(ns3:isParticipantIn ns3:Object)
+ObjectPropertyRange(ns3:isParticipantIn ns3:Event)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isPostconditionOf>)
+
+SubObjectPropertyOf(ns3:isPostconditionOf ns3:directlyFollows)
+ObjectPropertyDomain(ns3:isPostconditionOf ns3:Situation)
+ObjectPropertyRange(ns3:isPostconditionOf ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isPreconditionOf>)
+
+SubObjectPropertyOf(ns3:isPreconditionOf ns3:directlyPrecedes)
+ObjectPropertyDomain(ns3:isPreconditionOf ns3:Situation)
+ObjectPropertyRange(ns3:isPreconditionOf ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isQualityOf>)
+
+ObjectPropertyDomain(ns3:isQualityOf ns3:Quality)
+ObjectPropertyRange(ns3:isQualityOf ns3:Entity)
+ObjectPropertyRange(ns3:isQualityOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRealizedBy>)
+
+InverseObjectProperties(ns3:isRealizedBy ns3:realizes)
+ObjectPropertyDomain(ns3:isRealizedBy ns3:InformationObject)
+ObjectPropertyRange(ns3:isRealizedBy ns3:InformationRealization)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOf>)
+
+ObjectPropertyDomain(ns3:isReferenceOf ns3:Entity)
+ObjectPropertyDomain(ns3:isReferenceOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isReferenceOf ns3:InformationObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOfInformationRealizedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isReferenceOfInformationRealizedBy>)
+
+InverseObjectProperties(ns3:isReferenceOfInformationRealizedBy ns3:realizesInformationAbout)
+ObjectPropertyDomain(ns3:isReferenceOfInformationRealizedBy ns3:Entity)
+ObjectPropertyDomain(ns3:isReferenceOfInformationRealizedBy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:isReferenceOfInformationRealizedBy ns3:InformationRealization)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRegionFor>)
+
+ObjectPropertyDomain(ns3:isRegionFor ns3:Region)
+ObjectPropertyRange(ns3:isRegionFor ns3:Entity)
+ObjectPropertyRange(ns3:isRegionFor <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToConcept>)
+
+InverseObjectProperties(ns3:isRelatedToConcept ns3:isRelatedToConcept)
+SymmetricObjectProperty(ns3:isRelatedToConcept)
+ObjectPropertyDomain(ns3:isRelatedToConcept ns3:Concept)
+ObjectPropertyRange(ns3:isRelatedToConcept ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRelatedToDescription>)
+
+InverseObjectProperties(ns3:isRelatedToDescription ns3:isRelatedToDescription)
+SymmetricObjectProperty(ns3:isRelatedToDescription)
+ObjectPropertyDomain(ns3:isRelatedToDescription ns3:Description)
+ObjectPropertyRange(ns3:isRelatedToDescription ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRoleDefinedIn>)
+
+SubObjectPropertyOf(ns3:isRoleDefinedIn ns3:isDefinedIn)
+ObjectPropertyDomain(ns3:isRoleDefinedIn ns3:Role)
+ObjectPropertyRange(ns3:isRoleDefinedIn ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isRoleOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isRoleOf>)
+
+SubObjectPropertyOf(ns3:isRoleOf ns3:classifies)
+ObjectPropertyDomain(ns3:isRoleOf ns3:Role)
+ObjectPropertyRange(ns3:isRoleOf ns3:Object)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isSatisfiedBy>)
+
+InverseObjectProperties(ns3:isSatisfiedBy ns3:satisfies)
+ObjectPropertyDomain(ns3:isSatisfiedBy ns3:Description)
+ObjectPropertyRange(ns3:isSatisfiedBy ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor> (<http://www.loa-cnr.it/ontologies/DUL.owl#isSettingFor>)
+
+ObjectPropertyDomain(ns3:isSettingFor ns3:Situation)
+ObjectPropertyRange(ns3:isSettingFor ns3:Entity)
+ObjectPropertyRange(ns3:isSettingFor <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isSpecializedBy>)
+
+InverseObjectProperties(ns3:isSpecializedBy ns3:specializes)
+TransitiveObjectProperty(ns3:isSpecializedBy)
+ObjectPropertyDomain(ns3:isSpecializedBy ns3:SocialObject)
+ObjectPropertyRange(ns3:isSpecializedBy ns3:SocialObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isSubordinatedTo> (<http://www.loa-cnr.it/ontologies/DUL.owl#isSubordinatedTo>)
+
+SubObjectPropertyOf(ns3:isSubordinatedTo ns3:directlyFollows)
+SubObjectPropertyOf(ns3:isSubordinatedTo ns3:isRelatedToConcept)
+InverseObjectProperties(ns3:isSubordinatedTo ns3:isSuperordinatedTo)
+ObjectPropertyDomain(ns3:isSubordinatedTo ns3:Concept)
+ObjectPropertyRange(ns3:isSubordinatedTo ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo> (<http://www.loa-cnr.it/ontologies/DUL.owl#isSuperordinatedTo>)
+
+SubObjectPropertyOf(ns3:isSuperordinatedTo ns3:directlyPrecedes)
+SubObjectPropertyOf(ns3:isSuperordinatedTo ns3:isRelatedToConcept)
+ObjectPropertyDomain(ns3:isSuperordinatedTo ns3:Concept)
+ObjectPropertyRange(ns3:isSuperordinatedTo ns3:Concept)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isTaskDefinedIn>)
+
+SubObjectPropertyOf(ns3:isTaskDefinedIn ns3:isDefinedIn)
+ObjectPropertyDomain(ns3:isTaskDefinedIn ns3:Task)
+ObjectPropertyRange(ns3:isTaskDefinedIn ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isTaskOf>)
+
+SubObjectPropertyOf(ns3:isTaskOf ns3:isRelatedToConcept)
+ObjectPropertyDomain(ns3:isTaskOf ns3:Task)
+ObjectPropertyRange(ns3:isTaskOf ns3:Role)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isTimeIncludedIn> (<http://www.loa-cnr.it/ontologies/DUL.owl#isTimeIncludedIn>)
+
+SubObjectPropertyOf(ns3:isTimeIncludedIn ns3:hasSetting)
+ObjectPropertyDomain(ns3:isTimeIncludedIn ns3:TimeInterval)
+ObjectPropertyRange(ns3:isTimeIncludedIn ns3:Situation)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf> (<http://www.loa-cnr.it/ontologies/DUL.owl#isTimeOfObservationOf>)
+
+SubObjectPropertyOf(ns3:isTimeOfObservationOf ns3:isRegionFor)
+ObjectPropertyDomain(ns3:isTimeOfObservationOf ns3:TimeInterval)
+ObjectPropertyRange(ns3:isTimeOfObservationOf ns3:Entity)
+ObjectPropertyRange(ns3:isTimeOfObservationOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy> (<http://www.loa-cnr.it/ontologies/DUL.owl#isUnifiedBy>)
+
+InverseObjectProperties(ns3:isUnifiedBy ns3:unifies)
+ObjectPropertyDomain(ns3:isUnifiedBy ns3:Collection)
+ObjectPropertyRange(ns3:isUnifiedBy ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#nearTo> (<http://www.loa-cnr.it/ontologies/DUL.owl#nearTo>)
+
+InverseObjectProperties(ns3:nearTo ns3:nearTo)
+SymmetricObjectProperty(ns3:nearTo)
+ObjectPropertyDomain(ns3:nearTo ns3:Entity)
+ObjectPropertyDomain(ns3:nearTo <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:nearTo ns3:Entity)
+ObjectPropertyRange(ns3:nearTo <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#overlaps> (<http://www.loa-cnr.it/ontologies/DUL.owl#overlaps>)
+
+InverseObjectProperties(ns3:overlaps ns3:overlaps)
+SymmetricObjectProperty(ns3:overlaps)
+ObjectPropertyDomain(ns3:overlaps ns3:Entity)
+ObjectPropertyDomain(ns3:overlaps <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:overlaps ns3:Entity)
+ObjectPropertyRange(ns3:overlaps <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes> (<http://www.loa-cnr.it/ontologies/DUL.owl#parametrizes>)
+
+SubObjectPropertyOf(ns3:parametrizes ns3:classifies)
+ObjectPropertyDomain(ns3:parametrizes ns3:Parameter)
+ObjectPropertyRange(ns3:parametrizes ns3:Region)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#precedes> (<http://www.loa-cnr.it/ontologies/DUL.owl#precedes>)
+
+TransitiveObjectProperty(ns3:precedes)
+ObjectPropertyDomain(ns3:precedes ns3:Entity)
+ObjectPropertyDomain(ns3:precedes <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+ObjectPropertyRange(ns3:precedes ns3:Entity)
+ObjectPropertyRange(ns3:precedes <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#realizes> (<http://www.loa-cnr.it/ontologies/DUL.owl#realizes>)
+
+ObjectPropertyDomain(ns3:realizes ns3:InformationRealization)
+ObjectPropertyRange(ns3:realizes ns3:InformationObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout> (<http://www.loa-cnr.it/ontologies/DUL.owl#realizesInformationAbout>)
+
+ObjectPropertyDomain(ns3:realizesInformationAbout ns3:InformationRealization)
+ObjectPropertyRange(ns3:realizesInformationAbout ns3:Entity)
+ObjectPropertyRange(ns3:realizesInformationAbout <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#satisfies> (<http://www.loa-cnr.it/ontologies/DUL.owl#satisfies>)
+
+ObjectPropertyDomain(ns3:satisfies ns3:Situation)
+ObjectPropertyRange(ns3:satisfies ns3:Description)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#specializes> (<http://www.loa-cnr.it/ontologies/DUL.owl#specializes>)
+
+TransitiveObjectProperty(ns3:specializes)
+ObjectPropertyDomain(ns3:specializes ns3:SocialObject)
+ObjectPropertyRange(ns3:specializes ns3:SocialObject)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#unifies> (<http://www.loa-cnr.it/ontologies/DUL.owl#unifies>)
+
+ObjectPropertyDomain(ns3:unifies ns3:Description)
+ObjectPropertyRange(ns3:unifies ns3:Collection)
+
+# Object Property: <http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept> (<http://www.loa-cnr.it/ontologies/DUL.owl#usesConcept>)
+
+ObjectPropertyDomain(ns3:usesConcept ns3:Description)
+ObjectPropertyRange(ns3:usesConcept ns3:Concept)
+
+# Object Property: <http://www.loa.istc.cnr.it/ontologies/DUL.owl#describes> (<http://www.loa.istc.cnr.it/ontologies/DUL.owl#describes>)
+
+ReflexiveObjectProperty(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#describes>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.insight-centre.org/ces#OWLDataProperty_00000000000000000000> (<http://www.insight-centre.org/ces#OWLDataProperty_00000000000000000000>)
+
+DataPropertyRange(ns2:OWLDataProperty_00000000000000000000 xsd:string)
+
+# Data Property: <http://www.insight-centre.org/ces#accuracyWeight> (<http://www.insight-centre.org/ces#accuracyWeight>)
+
+SubDataPropertyOf(ns2:accuracyWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#availabilityWeight> (<http://www.insight-centre.org/ces#availabilityWeight>)
+
+SubDataPropertyOf(ns2:availabilityWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#bandwidthConsumptionWeight> (<http://www.insight-centre.org/ces#bandwidthConsumptionWeight>)
+
+SubDataPropertyOf(ns2:bandwidthConsumptionWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#energyConsumptionWeight> (<http://www.insight-centre.org/ces#energyConsumptionWeight>)
+
+SubDataPropertyOf(ns2:energyConsumptionWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#hasCardinality> (<http://www.insight-centre.org/ces#hasCardinality>)
+
+DataPropertyDomain(ns2:hasCardinality ns2:Repetition)
+DataPropertyRange(ns2:hasCardinality xsd:integer)
+
+# Data Property: <http://www.insight-centre.org/ces#hasInternalNodeID> (<http://www.insight-centre.org/ces#hasInternalNodeID>)
+
+DataPropertyDomain(ns2:hasInternalNodeID ns2:ServiceNode)
+DataPropertyRange(ns2:hasInternalNodeID xsd:string)
+
+# Data Property: <http://www.insight-centre.org/ces#jmsService> (<http://www.insight-centre.org/ces#jmsService>)
+
+DataPropertyDomain(ns2:jmsService ns2:JmsGrounding)
+DataPropertyRange(ns2:jmsService xsd:anyURI)
+
+# Data Property: <http://www.insight-centre.org/ces#latencyWeight> (<http://www.insight-centre.org/ces#latencyWeight>)
+
+SubDataPropertyOf(ns2:latencyWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#priceWeight> (<http://www.insight-centre.org/ces#priceWeight>)
+
+SubDataPropertyOf(ns2:priceWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#reliabilityWeight> (<http://www.insight-centre.org/ces#reliabilityWeight>)
+
+SubDataPropertyOf(ns2:reliabilityWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#securityWeight> (<http://www.insight-centre.org/ces#securityWeight>)
+
+SubDataPropertyOf(ns2:securityWeight ns2:weight)
+
+# Data Property: <http://www.insight-centre.org/ces#weight> (<http://www.insight-centre.org/ces#weight>)
+
+DataPropertyDomain(ns2:weight ns2:QosWeightPreference)
+DataPropertyRange(ns2:weight xsd:double)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasAvgSpeed> (<http://www.insight-centre.org/citytraffic#hasAvgSpeed>)
+
+DataPropertyDomain(ns8:hasAvgSpeed ns8:AvgSpeed)
+DataPropertyRange(ns8:hasAvgSpeed xsd:integer)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasLat> (<http://www.insight-centre.org/citytraffic#hasLat>)
+
+DataPropertyDomain(ns8:hasLat ns8:Node)
+DataPropertyRange(ns8:hasLat xsd:double)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasLon> (<http://www.insight-centre.org/citytraffic#hasLon>)
+
+DataPropertyDomain(ns8:hasLon ns8:Node)
+DataPropertyRange(ns8:hasLon xsd:double)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasMeasureTime> (<http://www.insight-centre.org/citytraffic#hasMeasureTime>)
+
+DataPropertyDomain(ns8:hasMeasureTime ns8:MeasureTime)
+DataPropertyRange(ns8:hasMeasureTime xsd:integer)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasTRID> (<http://www.insight-centre.org/citytraffic#hasTRID>)
+
+DataPropertyDomain(ns8:hasTRID ns2:EventProfile)
+DataPropertyRange(ns8:hasTRID xsd:string)
+
+# Data Property: <http://www.insight-centre.org/citytraffic#hasVehicleCount> (<http://www.insight-centre.org/citytraffic#hasVehicleCount>)
+
+DataPropertyDomain(ns8:hasVehicleCount ns8:VehicleCount)
+DataPropertyRange(ns8:hasVehicleCount xsd:integer)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasDataValue>)
+
+DataPropertyDomain(ns3:hasDataValue ns3:Entity)
+DataPropertyDomain(ns3:hasDataValue <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasEventDate>)
+
+SubDataPropertyOf(ns3:hasEventDate ns3:hasDataValue)
+DataPropertyDomain(ns3:hasEventDate ns3:Event)
+DataPropertyRange(ns3:hasEventDate xsd:date)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasIntervalDate>)
+
+SubDataPropertyOf(ns3:hasIntervalDate ns3:hasRegionDataValue)
+DataPropertyDomain(ns3:hasIntervalDate ns3:TimeInterval)
+DataPropertyRange(ns3:hasIntervalDate xsd:date)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasParameterDataValue>)
+
+SubDataPropertyOf(ns3:hasParameterDataValue ns3:hasDataValue)
+DataPropertyDomain(ns3:hasParameterDataValue ns3:Parameter)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasProxy>)
+
+DataPropertyDomain(ns3:hasProxy ns3:Entity)
+DataPropertyDomain(ns3:hasProxy <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+DataPropertyRange(ns3:hasProxy xsd:anyURI)
+
+# Data Property: <http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue> (<http://www.loa-cnr.it/ontologies/DUL.owl#hasRegionDataValue>)
+
+SubDataPropertyOf(ns3:hasRegionDataValue ns3:hasDataValue)
+DataPropertyDomain(ns3:hasRegionDataValue ns3:Region)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#AverageCongestionLevel> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#AverageCongestionLevel>)
+
+SubClassOf(ns5:AverageCongestionLevel ns8:CongestionLevel)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#BigCongestionLevel> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#BigCongestionLevel>)
+
+SubClassOf(ns5:BigCongestionLevel ns8:CongestionLevel)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Building> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Building>)
+
+SubClassOf(ns5:Building ns8:Location)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Childcare> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Childcare>)
+
+SubClassOf(ns5:Childcare ns5:Policies)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#CongestionFlexibleOfficeObservation> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#CongestionFlexibleOfficeObservation>)
+
+EquivalentClasses(ns5:CongestionFlexibleOfficeObservation ObjectIntersectionOf(ns5:FlexibleOfficeObservation :CongestionObservation))
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#EveningOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#EveningOffice>)
+
+SubClassOf(ns5:EveningOffice ns5:Office)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleHours> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleHours>)
+
+SubClassOf(ns5:FlexibleHours ns5:Policies)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleOffice>)
+
+EquivalentClasses(ns5:FlexibleOffice ObjectIntersectionOf(ObjectSomeValuesFrom(ns5:hasPolicy ns5:StartEarly) ObjectSomeValuesFrom(ns5:hasPolicy ns5:StopEarly)))
+SubClassOf(ns5:FlexibleOffice ns5:Office)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleOfficeObservation> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#FlexibleOfficeObservation>)
+
+EquivalentClasses(ns5:FlexibleOfficeObservation ObjectIntersectionOf(ns1:Observation ObjectSomeValuesFrom(ns5:observedFeature ObjectSomeValuesFrom(ns3:isLocationOf ns5:FlexibleOffice))))
+SubClassOf(ns5:FlexibleOfficeObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficMainRoadNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficMainRoadNearFlexibleOffice>)
+
+EquivalentClasses(ns5:HighTrafficMainRoadNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns5:MainRoad) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:minInclusive "15"^^xsd:int))))
+SubClassOf(ns5:HighTrafficMainRoadNearFlexibleOffice ns5:HighTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficNearFlexibleOffice>)
+
+SubClassOf(ns5:HighTrafficNearFlexibleOffice ns5:TrafficObservation)
+DisjointClasses(ns5:HighTrafficNearFlexibleOffice ns5:LowTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficRoadNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficRoadNearFlexibleOffice>)
+
+EquivalentClasses(ns5:HighTrafficRoadNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns5:Road) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:minInclusive "10"^^xsd:int))))
+SubClassOf(ns5:HighTrafficRoadNearFlexibleOffice ns5:HighTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficStreetNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HighTrafficStreetNearFlexibleOffice>)
+
+EquivalentClasses(ns5:HighTrafficStreetNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns8:Street) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:minInclusive "5"^^xsd:int))))
+SubClassOf(ns5:HighTrafficStreetNearFlexibleOffice ns5:HighTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HugeCongestionLevel> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#HugeCongestionLevel>)
+
+SubClassOf(ns5:HugeCongestionLevel ns8:CongestionLevel)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficMainRoadNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficMainRoadNearFlexibleOffice>)
+
+EquivalentClasses(ns5:LowTrafficMainRoadNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns5:MainRoad) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:maxExclusive "15"^^xsd:int))))
+SubClassOf(ns5:LowTrafficMainRoadNearFlexibleOffice ns5:LowTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficNearFlexibleOffice>)
+
+SubClassOf(ns5:LowTrafficNearFlexibleOffice ns5:TrafficObservation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficRoadNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficRoadNearFlexibleOffice>)
+
+EquivalentClasses(ns5:LowTrafficRoadNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns5:Road) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:maxExclusive "10"^^xsd:int))))
+SubClassOf(ns5:LowTrafficRoadNearFlexibleOffice ns5:LowTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficStreetNearFlexibleOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#LowTrafficStreetNearFlexibleOffice>)
+
+EquivalentClasses(ns5:LowTrafficStreetNearFlexibleOffice ObjectIntersectionOf(ns5:CongestionFlexibleOfficeObservation ObjectSomeValuesFrom(ns5:observedFeature ns8:Street) DataSomeValuesFrom(ns8:hasValue DatatypeRestriction(xsd:int xsd:maxExclusive "5"^^xsd:int))))
+SubClassOf(ns5:LowTrafficStreetNearFlexibleOffice ns5:LowTrafficNearFlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#MainRoad> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#MainRoad>)
+
+SubClassOf(ns5:MainRoad ns8:Place)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#NoFixedHoursOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#NoFixedHoursOffice>)
+
+EquivalentClasses(ns5:NoFixedHoursOffice ObjectSomeValuesFrom(ns5:hasPolicy ns5:FlexibleHours))
+SubClassOf(ns5:NoFixedHoursOffice ns5:FlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Office> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Office>)
+
+SubClassOf(ns5:Office ns5:Building)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Parking> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Parking>)
+
+SubClassOf(ns5:Parking ns8:Location)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Road> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#Road>)
+
+SubClassOf(ns5:Road ns8:Place)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#SmallCongestionLevel> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#SmallCongestionLevel>)
+
+SubClassOf(ns5:SmallCongestionLevel ns8:CongestionLevel)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StartEarly> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StartEarly>)
+
+SubClassOf(ns5:StartEarly ns5:Policies)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StartEarlyOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StartEarlyOffice>)
+
+EquivalentClasses(ns5:StartEarlyOffice ObjectSomeValuesFrom(ns5:hasPolicy ns5:StartEarly))
+SubClassOf(ns5:StartEarlyOffice ns5:FlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StopEarly> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StopEarly>)
+
+SubClassOf(ns5:StopEarly ns5:Policies)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StopEarlyOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StopEarlyOffice>)
+
+EquivalentClasses(ns5:StopEarlyOffice ObjectSomeValuesFrom(ns5:hasPolicy ns5:StopEarly))
+SubClassOf(ns5:StopEarlyOffice ns5:FlexibleOffice)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StrictOffice> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#StrictOffice>)
+
+SubClassOf(ns5:StrictOffice ns5:Office)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#TinyCongestionLevel> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#TinyCongestionLevel>)
+
+SubClassOf(ns5:TinyCongestionLevel ns8:CongestionLevel)
+
+# Class: <http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#TrafficObservation> (<http://massif.streaming/ontologies/rsplab/citybenchPlus.owl#TrafficObservation>)
+
+SubClassOf(ns5:TrafficObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGSpeed> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGSpeed>)
+
+SubClassOf(:AVGSpeed :TrafficMetrics)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGSpeedObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGSpeedObservation>)
+
+EquivalentClasses(:AVGSpeedObservation ObjectIntersectionOf(ns1:Observation ObjectSomeValuesFrom(ns1:observedProperty :AVGSpeed)))
+SubClassOf(:AVGSpeedObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGTime> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGTime>)
+
+SubClassOf(:AVGTime :TrafficMetrics)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGTimeObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#AVGTimeObservation>)
+
+EquivalentClasses(:AVGTimeObservation ObjectIntersectionOf(ns1:Observation ObjectSomeValuesFrom(ns1:observedProperty :AVGTime)))
+SubClassOf(:AVGTimeObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#ActiveSensor> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#ActiveSensor>)
+
+EquivalentClasses(:ActiveSensor ObjectIntersectionOf(ns1:Sensor ObjectMinCardinality(3 ns1:madeObservation ns1:Observation)))
+SubClassOf(:ActiveSensor ns1:Sensor)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#CongestionObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#CongestionObservation>)
+
+EquivalentClasses(:CongestionObservation ObjectIntersectionOf(ns1:Observation ObjectSomeValuesFrom(ns1:observedProperty ns8:CongestionLevel)))
+SubClassOf(:CongestionObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#CongestionOnlyObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#CongestionOnlyObservation>)
+
+EquivalentClasses(:CongestionOnlyObservation ObjectIntersectionOf(ns1:Observation ObjectAllValuesFrom(ns1:observedProperty ns8:CongestionLevel)))
+SubClassOf(:CongestionOnlyObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteCongestionObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteCongestionObservation>)
+
+EquivalentClasses(:DiscreteCongestionObservation ObjectIntersectionOf(:CongestionObservation ObjectSomeValuesFrom(:hasDiscreteValue :DiscreteValue)))
+SubClassOf(:DiscreteCongestionObservation ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteHighCongestionObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteHighCongestionObservation>)
+
+EquivalentClasses(:DiscreteHighCongestionObservation ObjectIntersectionOf(:DiscreteCongestionObservation ObjectSomeValuesFrom(:hasDiscreteValue :HighValue)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteLowCongestionObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteLowCongestionObservation>)
+
+EquivalentClasses(:DiscreteLowCongestionObservation ObjectIntersectionOf(:DiscreteCongestionObservation ObjectSomeValuesFrom(:hasDiscreteValue :LowValue)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteMediumCongestionObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteMediumCongestionObservation>)
+
+EquivalentClasses(:DiscreteMediumCongestionObservation ObjectIntersectionOf(:DiscreteCongestionObservation ObjectSomeValuesFrom(:hasDiscreteValue :MediumValue)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteValue> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#DiscreteValue>)
+
+DisjointUnion(:DiscreteValue :HighValue :LowValue :MediumValue)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#HighValue> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#HighValue>)
+
+SubClassOf(:HighValue :DiscreteValue)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#LazySensor> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#LazySensor>)
+
+EquivalentClasses(:LazySensor ObjectIntersectionOf(ns1:Sensor ObjectMaxCardinality(1 ns1:madeObservation ns1:Observation)))
+SubClassOf(:LazySensor <http://www.loa.istc.cnr.it/ontologies/DUL.owl#PhysicalObject>)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#LazySensorRestriction> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#LazySensorRestriction>)
+
+SubClassOf(:LazySensorRestriction ns1:Sensor)
+SubClassOf(:LazySensorRestriction ObjectIntersectionOf(ns1:Sensor ObjectMaxCardinality(1 ns1:madeObservation ns1:Observation)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#LowValue> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#LowValue>)
+
+SubClassOf(:LowValue :DiscreteValue)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#MediumValue> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#MediumValue>)
+
+SubClassOf(:MediumValue :DiscreteValue)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#ObservationCongestionOnly> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#ObservationCongestionOnly>)
+
+SubClassOf(:ObservationCongestionOnly ns1:Observation)
+SubClassOf(:ObservationCongestionOnly ObjectIntersectionOf(ns1:Observation ObjectAllValuesFrom(ns1:observedProperty ns8:CongestionLevel)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#ObservationOneCongestion> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#ObservationOneCongestion>)
+
+EquivalentClasses(:ObservationOneCongestion ObjectIntersectionOf(ns1:Observation ObjectExactCardinality(1 ns1:observedProperty ns8:CongestionLevel)))
+SubClassOf(:ObservationOneCongestion ns1:Observation)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#SelfDescribingObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#SelfDescribingObservation>)
+
+EquivalentClasses(:SelfDescribingObservation ObjectIntersectionOf(ns1:Observation ObjectHasSelf(ns3:describes)))
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#VehicleCount> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#VehicleCount>)
+
+SubClassOf(:VehicleCount :TrafficMetrics)
+
+# Class: <http://massif.streaming/ontologies/rsplab/officerepository.owl#VehicleCountObservation> (<http://massif.streaming/ontologies/rsplab/officerepository.owl#VehicleCountObservation>)
+
+EquivalentClasses(:VehicleCountObservation ObjectIntersectionOf(ns1:Observation ObjectSomeValuesFrom(ns1:observedProperty ns8:VehicleCount)))
+SubClassOf(:VehicleCountObservation ns1:Observation)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Accuracy> (<http://purl.oclc.org/NET/ssnx/ssn#Accuracy>)
+
+SubClassOf(ns1:Accuracy ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime> (<http://purl.oclc.org/NET/ssnx/ssn#BatteryLifetime>)
+
+SubClassOf(ns1:BatteryLifetime ns1:SurvivalProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Condition> (<http://purl.oclc.org/NET/ssnx/ssn#Condition>)
+
+SubClassOf(ns1:Condition ns1:Property)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Deployment> (<http://purl.oclc.org/NET/ssnx/ssn#Deployment>)
+
+SubClassOf(ns1:Deployment ns1:DeploymentRelatedProcess)
+SubClassOf(ns1:Deployment ObjectAllValuesFrom(ns1:deployedOnPlatform ns1:Platform))
+SubClassOf(ns1:Deployment ObjectAllValuesFrom(ns1:deployedSystem ns1:System))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess> (<http://purl.oclc.org/NET/ssnx/ssn#DeploymentRelatedProcess>)
+
+SubClassOf(ns1:DeploymentRelatedProcess <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Process>)
+SubClassOf(ns1:DeploymentRelatedProcess ObjectAllValuesFrom(ns1:deploymentProcessPart ns1:DeploymentRelatedProcess))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#DetectionLimit> (<http://purl.oclc.org/NET/ssnx/ssn#DetectionLimit>)
+
+SubClassOf(ns1:DetectionLimit ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Device> (<http://purl.oclc.org/NET/ssnx/ssn#Device>)
+
+SubClassOf(ns1:Device ns1:System)
+SubClassOf(ns1:Device <http://www.loa.istc.cnr.it/ontologies/DUL.owl#DesignedArtifact>)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Drift> (<http://purl.oclc.org/NET/ssnx/ssn#Drift>)
+
+SubClassOf(ns1:Drift ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest> (<http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest>)
+
+SubClassOf(ns1:FeatureOfInterest owl:Thing)
+SubClassOf(ns1:FeatureOfInterest ObjectUnionOf(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Event> <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Object>))
+SubClassOf(ns1:FeatureOfInterest ObjectSomeValuesFrom(ns1:hasProperty ns1:Property))
+SubClassOf(ns1:FeatureOfInterest ObjectAllValuesFrom(ns1:hasProperty ns1:Property))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Frequency> (<http://purl.oclc.org/NET/ssnx/ssn#Frequency>)
+
+SubClassOf(ns1:Frequency ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Input> (<http://purl.oclc.org/NET/ssnx/ssn#Input>)
+
+DisjointClasses(ns1:Input ns1:Output)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Latency> (<http://purl.oclc.org/NET/ssnx/ssn#Latency>)
+
+SubClassOf(ns1:Latency ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#MaintenanceSchedule> (<http://purl.oclc.org/NET/ssnx/ssn#MaintenanceSchedule>)
+
+SubClassOf(ns1:MaintenanceSchedule ns1:OperatingProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability> (<http://purl.oclc.org/NET/ssnx/ssn#MeasurementCapability>)
+
+SubClassOf(ns1:MeasurementCapability ns1:Property)
+SubClassOf(ns1:MeasurementCapability ObjectAllValuesFrom(ns1:forProperty ns1:Property))
+SubClassOf(ns1:MeasurementCapability ObjectAllValuesFrom(ns1:hasMeasurementProperty ns1:MeasurementProperty))
+SubClassOf(ns1:MeasurementCapability ObjectAllValuesFrom(ns1:inCondition ns1:Condition))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty> (<http://purl.oclc.org/NET/ssnx/ssn#MeasurementProperty>)
+
+SubClassOf(ns1:MeasurementProperty ns1:Property)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange> (<http://purl.oclc.org/NET/ssnx/ssn#MeasurementRange>)
+
+SubClassOf(ns1:MeasurementRange ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Observation> (<http://purl.oclc.org/NET/ssnx/ssn#Observation>)
+
+SubClassOf(ns1:Observation <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Situation>)
+SubClassOf(ns1:Observation ObjectSomeValuesFrom(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#includesEvent> ns1:Stimulus))
+SubClassOf(ns1:Observation ObjectAllValuesFrom(ns1:featureOfInterest ns1:FeatureOfInterest))
+SubClassOf(ns1:Observation ObjectAllValuesFrom(ns1:observationResult ns1:SensorOutput))
+SubClassOf(ns1:Observation ObjectAllValuesFrom(ns1:observedBy ns1:Sensor))
+SubClassOf(ns1:Observation ObjectAllValuesFrom(ns1:observedProperty ns1:Property))
+SubClassOf(ns1:Observation ObjectAllValuesFrom(ns1:sensingMethodUsed ns1:Sensing))
+SubClassOf(ns1:Observation ObjectMinCardinality(0 ns1:observationResultTime))
+SubClassOf(ns1:Observation ObjectMinCardinality(0 ns1:observationSamplingTime))
+SubClassOf(ns1:Observation ObjectMinCardinality(0 ns1:qualityOfObservation))
+SubClassOf(ns1:Observation ObjectExactCardinality(1 ns1:featureOfInterest ns1:FeatureOfInterest))
+SubClassOf(ns1:Observation ObjectExactCardinality(1 ns1:observedBy ns1:Sensor))
+SubClassOf(ns1:Observation ObjectExactCardinality(1 ns1:observedProperty ns1:Property))
+SubClassOf(ns1:Observation ObjectExactCardinality(1 ns1:sensingMethodUsed ns1:Sensing))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#ObservationValue> (<http://purl.oclc.org/NET/ssnx/ssn#ObservationValue>)
+
+SubClassOf(ns1:ObservationValue <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Region>)
+SubClassOf(ns1:ObservationValue ObjectSomeValuesFrom(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#isRegionFor> ns1:SensorOutput))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#OperatingPowerRange> (<http://purl.oclc.org/NET/ssnx/ssn#OperatingPowerRange>)
+
+SubClassOf(ns1:OperatingPowerRange ns1:OperatingProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty> (<http://purl.oclc.org/NET/ssnx/ssn#OperatingProperty>)
+
+SubClassOf(ns1:OperatingProperty ns1:Property)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#OperatingRange> (<http://purl.oclc.org/NET/ssnx/ssn#OperatingRange>)
+
+SubClassOf(ns1:OperatingRange ns1:Property)
+SubClassOf(ns1:OperatingRange ObjectAllValuesFrom(ns1:hasOperatingProperty ns1:OperatingProperty))
+SubClassOf(ns1:OperatingRange ObjectAllValuesFrom(ns1:inCondition ns1:Condition))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Platform> (<http://purl.oclc.org/NET/ssnx/ssn#Platform>)
+
+SubClassOf(ns1:Platform <http://www.loa.istc.cnr.it/ontologies/DUL.owl#PhysicalObject>)
+SubClassOf(ns1:Platform ObjectAllValuesFrom(ns1:attachedSystem ns1:System))
+SubClassOf(ns1:Platform ObjectAllValuesFrom(ns1:inDeployment ns1:Deployment))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Precision> (<http://purl.oclc.org/NET/ssnx/ssn#Precision>)
+
+SubClassOf(ns1:Precision ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Process> (<http://purl.oclc.org/NET/ssnx/ssn#Process>)
+
+SubClassOf(ns1:Process <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Method>)
+SubClassOf(ns1:Process ObjectSomeValuesFrom(ns1:hasOutput ns1:Output))
+SubClassOf(ns1:Process ObjectAllValuesFrom(ns1:hasInput ns1:Input))
+SubClassOf(ns1:Process ObjectAllValuesFrom(ns1:hasOutput ns1:Output))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Property> (<http://purl.oclc.org/NET/ssnx/ssn#Property>)
+
+SubClassOf(ns1:Property <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Quality>)
+SubClassOf(ns1:Property ObjectSomeValuesFrom(ns1:isPropertyOf ns1:FeatureOfInterest))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Resolution> (<http://purl.oclc.org/NET/ssnx/ssn#Resolution>)
+
+SubClassOf(ns1:Resolution ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#ResponseTime> (<http://purl.oclc.org/NET/ssnx/ssn#ResponseTime>)
+
+SubClassOf(ns1:ResponseTime ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Selectivity> (<http://purl.oclc.org/NET/ssnx/ssn#Selectivity>)
+
+SubClassOf(ns1:Selectivity ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Sensing> (<http://purl.oclc.org/NET/ssnx/ssn#Sensing>)
+
+SubClassOf(ns1:Sensing ns1:Process)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SensingDevice> (<http://purl.oclc.org/NET/ssnx/ssn#SensingDevice>)
+
+SubClassOf(ns1:SensingDevice ns1:Device)
+SubClassOf(ns1:SensingDevice ns1:Sensor)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Sensitivity> (<http://purl.oclc.org/NET/ssnx/ssn#Sensitivity>)
+
+SubClassOf(ns1:Sensitivity ns1:MeasurementProperty)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Sensor> (<http://purl.oclc.org/NET/ssnx/ssn#Sensor>)
+
+SubClassOf(ns1:Sensor <http://www.loa.istc.cnr.it/ontologies/DUL.owl#PhysicalObject>)
+SubClassOf(ns1:Sensor ObjectSomeValuesFrom(ns1:implements ns1:Sensing))
+SubClassOf(ns1:Sensor ObjectAllValuesFrom(ns1:detects ns1:Stimulus))
+SubClassOf(ns1:Sensor ObjectAllValuesFrom(ns1:hasMeasurementCapability ns1:MeasurementCapability))
+SubClassOf(ns1:Sensor ObjectAllValuesFrom(ns1:observes ns1:Property))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SensorDataSheet> (<http://purl.oclc.org/NET/ssnx/ssn#SensorDataSheet>)
+
+SubClassOf(ns1:SensorDataSheet <http://www.loa.istc.cnr.it/ontologies/DUL.owl#InformationObject>)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SensorInput> (<http://purl.oclc.org/NET/ssnx/ssn#SensorInput>)
+
+EquivalentClasses(ns1:SensorInput ns1:Stimulus)
+SubClassOf(ns1:SensorInput <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Event>)
+SubClassOf(ns1:SensorInput ObjectAllValuesFrom(ns1:isProxyFor ns1:Property))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SensorOutput> (<http://purl.oclc.org/NET/ssnx/ssn#SensorOutput>)
+
+SubClassOf(ns1:SensorOutput <http://www.loa.istc.cnr.it/ontologies/DUL.owl#InformationObject>)
+SubClassOf(ns1:SensorOutput ObjectSomeValuesFrom(ns1:isProducedBy ns1:Sensor))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#Stimulus> (<http://purl.oclc.org/NET/ssnx/ssn#Stimulus>)
+
+SubClassOf(ns1:Stimulus <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Event>)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty> (<http://purl.oclc.org/NET/ssnx/ssn#SurvivalProperty>)
+
+SubClassOf(ns1:SurvivalProperty ns1:Property)
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange> (<http://purl.oclc.org/NET/ssnx/ssn#SurvivalRange>)
+
+SubClassOf(ns1:SurvivalRange ns1:Property)
+SubClassOf(ns1:SurvivalRange ObjectAllValuesFrom(ns1:hasSurvivalProperty ns1:SurvivalProperty))
+SubClassOf(ns1:SurvivalRange ObjectAllValuesFrom(ns1:inCondition ns1:Condition))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#System> (<http://purl.oclc.org/NET/ssnx/ssn#System>)
+
+SubClassOf(ns1:System <http://www.loa.istc.cnr.it/ontologies/DUL.owl#PhysicalObject>)
+SubClassOf(ns1:System ObjectSomeValuesFrom(ns1:hasSubSystem ns1:System))
+SubClassOf(ns1:System ObjectAllValuesFrom(ns1:hasDeployment ns1:Deployment))
+SubClassOf(ns1:System ObjectAllValuesFrom(ns1:hasOperatingRange ns1:OperatingRange))
+SubClassOf(ns1:System ObjectAllValuesFrom(ns1:hasSubSystem ns1:System))
+SubClassOf(ns1:System ObjectAllValuesFrom(ns1:hasSurvivalRange ns1:SurvivalRange))
+SubClassOf(ns1:System ObjectAllValuesFrom(ns1:onPlatform ns1:Platform))
+
+# Class: <http://purl.oclc.org/NET/ssnx/ssn#SystemLifetime> (<http://purl.oclc.org/NET/ssnx/ssn#SystemLifetime>)
+
+SubClassOf(ns1:SystemLifetime ns1:SurvivalProperty)
+
+# Class: <http://www.insight-centre.org/ces#Accessiblity> (<http://www.insight-centre.org/ces#Accessiblity>)
+
+SubClassOf(ns2:Accessiblity ns2:QoS)
+
+# Class: <http://www.insight-centre.org/ces#Accuracy> (<http://www.insight-centre.org/ces#Accuracy>)
+
+SubClassOf(ns2:Accuracy ns2:Believability)
+
+# Class: <http://www.insight-centre.org/ces#Aggregation> (<http://www.insight-centre.org/ces#Aggregation>)
+
+SubClassOf(ns2:Aggregation ns2:EventPattern)
+
+# Class: <http://www.insight-centre.org/ces#And> (<http://www.insight-centre.org/ces#And>)
+
+SubClassOf(ns2:And ns2:EventPattern)
+SubClassOf(ns2:And rdfs:Bag)
+
+# Class: <http://www.insight-centre.org/ces#Availability> (<http://www.insight-centre.org/ces#Availability>)
+
+SubClassOf(ns2:Availability ns2:Accessiblity)
+
+# Class: <http://www.insight-centre.org/ces#BandWidthConsumption> (<http://www.insight-centre.org/ces#BandWidthConsumption>)
+
+SubClassOf(ns2:BandWidthConsumption ns2:Cost)
+
+# Class: <http://www.insight-centre.org/ces#Believability> (<http://www.insight-centre.org/ces#Believability>)
+
+SubClassOf(ns2:Believability ns2:QoS)
+
+# Class: <http://www.insight-centre.org/ces#ComplexEventService> (<http://www.insight-centre.org/ces#ComplexEventService>)
+
+SubClassOf(ns2:ComplexEventService ns2:EventService)
+
+# Class: <http://www.insight-centre.org/ces#Context> (<http://www.insight-centre.org/ces#Context>)
+
+SubClassOf(ns2:Context ns2:NFP)
+
+# Class: <http://www.insight-centre.org/ces#Cost> (<http://www.insight-centre.org/ces#Cost>)
+
+SubClassOf(ns2:Cost ns2:QoS)
+
+# Class: <http://www.insight-centre.org/ces#EnergyConsumption> (<http://www.insight-centre.org/ces#EnergyConsumption>)
+
+SubClassOf(ns2:EnergyConsumption ns2:Cost)
+
+# Class: <http://www.insight-centre.org/ces#EventProfile> (<http://www.insight-centre.org/ces#EventProfile>)
+
+SubClassOf(ns2:EventProfile <http://www.daml.org/services/owl-s/1.2/Profile.owl#Profile>)
+
+# Class: <http://www.insight-centre.org/ces#EventRequest> (<http://www.insight-centre.org/ces#EventRequest>)
+
+SubClassOf(ns2:EventRequest ns2:EventService)
+
+# Class: <http://www.insight-centre.org/ces#EventService> (<http://www.insight-centre.org/ces#EventService>)
+
+SubClassOf(ns2:EventService ns9:Service)
+
+# Class: <http://www.insight-centre.org/ces#Filter> (<http://www.insight-centre.org/ces#Filter>)
+
+SubClassOf(ns2:Filter ns2:EventPattern)
+
+# Class: <http://www.insight-centre.org/ces#JmsGrounding> (<http://www.insight-centre.org/ces#JmsGrounding>)
+
+SubClassOf(ns2:JmsGrounding <http://www.daml.org/services/owl-s/1.2/Grounding.owl#Grounding>)
+
+# Class: <http://www.insight-centre.org/ces#Latency> (<http://www.insight-centre.org/ces#Latency>)
+
+SubClassOf(ns2:Latency ns2:Timeliness)
+
+# Class: <http://www.insight-centre.org/ces#NFP> (<http://www.insight-centre.org/ces#NFP>)
+
+SubClassOf(ns2:NFP ns4:ServiceParameter)
+
+# Class: <http://www.insight-centre.org/ces#Or> (<http://www.insight-centre.org/ces#Or>)
+
+SubClassOf(ns2:Or ns2:EventPattern)
+SubClassOf(ns2:Or rdfs:Bag)
+
+# Class: <http://www.insight-centre.org/ces#Price> (<http://www.insight-centre.org/ces#Price>)
+
+SubClassOf(ns2:Price ns2:Cost)
+
+# Class: <http://www.insight-centre.org/ces#PrimitiveEventService> (<http://www.insight-centre.org/ces#PrimitiveEventService>)
+
+SubClassOf(ns2:PrimitiveEventService ns2:EventService)
+
+# Class: <http://www.insight-centre.org/ces#QoS> (<http://www.insight-centre.org/ces#QoS>)
+
+SubClassOf(ns2:QoS ns2:NFP)
+
+# Class: <http://www.insight-centre.org/ces#QosWeightPreference> (<http://www.insight-centre.org/ces#QosWeightPreference>)
+
+SubClassOf(ns2:QosWeightPreference ns2:Preference)
+
+# Class: <http://www.insight-centre.org/ces#Reliability> (<http://www.insight-centre.org/ces#Reliability>)
+
+SubClassOf(ns2:Reliability ns2:Believability)
+
+# Class: <http://www.insight-centre.org/ces#Repetition> (<http://www.insight-centre.org/ces#Repetition>)
+
+SubClassOf(ns2:Repetition ns2:EventPattern)
+SubClassOf(ns2:Repetition rdfs:Seq)
+
+# Class: <http://www.insight-centre.org/ces#Security> (<http://www.insight-centre.org/ces#Security>)
+
+SubClassOf(ns2:Security ns2:Believability)
+
+# Class: <http://www.insight-centre.org/ces#Selection> (<http://www.insight-centre.org/ces#Selection>)
+
+SubClassOf(ns2:Selection ns2:EventPattern)
+
+# Class: <http://www.insight-centre.org/ces#Sequence> (<http://www.insight-centre.org/ces#Sequence>)
+
+SubClassOf(ns2:Sequence ns2:EventPattern)
+SubClassOf(ns2:Sequence rdfs:Seq)
+
+# Class: <http://www.insight-centre.org/ces#ServiceNode> (<http://www.insight-centre.org/ces#ServiceNode>)
+
+SubClassOf(ns2:ServiceNode ns2:EventPattern)
+
+# Class: <http://www.insight-centre.org/ces#Timeliness> (<http://www.insight-centre.org/ces#Timeliness>)
+
+SubClassOf(ns2:Timeliness ns2:QoS)
+
+# Class: <http://www.insight-centre.org/citytraffic#City> (<http://www.insight-centre.org/citytraffic#City>)
+
+SubClassOf(ns8:City ns8:Place)
+
+# Class: <http://www.insight-centre.org/citytraffic#CongestionLevel> (<http://www.insight-centre.org/citytraffic#CongestionLevel>)
+
+SubClassOf(ns8:CongestionLevel :TrafficMetrics)
+
+# Class: <http://www.insight-centre.org/citytraffic#Distance> (<http://www.insight-centre.org/citytraffic#Distance>)
+
+SubClassOf(ns8:Distance ns2:Context)
+
+# Class: <http://www.insight-centre.org/citytraffic#District> (<http://www.insight-centre.org/citytraffic#District>)
+
+SubClassOf(ns8:District ns8:Place)
+
+# Class: <http://www.insight-centre.org/citytraffic#DistrictTrafficReportService> (<http://www.insight-centre.org/citytraffic#DistrictTrafficReportService>)
+
+SubClassOf(ns8:DistrictTrafficReportService ns2:ComplexEventService)
+
+# Class: <http://www.insight-centre.org/citytraffic#Node> (<http://www.insight-centre.org/citytraffic#Node>)
+
+SubClassOf(ns8:Node ns8:Place)
+
+# Class: <http://www.insight-centre.org/citytraffic#Place> (<http://www.insight-centre.org/citytraffic#Place>)
+
+SubClassOf(ns8:Place ns2:Context)
+
+# Class: <http://www.insight-centre.org/citytraffic#SegTrafficReportService> (<http://www.insight-centre.org/citytraffic#SegTrafficReportService>)
+
+SubClassOf(ns8:SegTrafficReportService ns2:PrimitiveEventService)
+
+# Class: <http://www.insight-centre.org/citytraffic#Street> (<http://www.insight-centre.org/citytraffic#Street>)
+
+SubClassOf(ns8:Street ns8:Place)
+
+# Class: <http://www.insight-centre.org/citytraffic#StreetTrafficReportService> (<http://www.insight-centre.org/citytraffic#StreetTrafficReportService>)
+
+SubClassOf(ns8:StreetTrafficReportService ns2:ComplexEventService)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Abstract> (<http://www.loa-cnr.it/ontologies/DUL.owl#Abstract>)
+
+SubClassOf(ns3:Abstract ns3:Entity)
+SubClassOf(ns3:Abstract <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+DisjointClasses(ns3:Abstract ns3:Event)
+DisjointClasses(ns3:Abstract ns3:Object)
+DisjointClasses(ns3:Abstract ns3:Quality)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Action> (<http://www.loa-cnr.it/ontologies/DUL.owl#Action>)
+
+SubClassOf(ns3:Action ns3:Event)
+SubClassOf(ns3:Action ObjectSomeValuesFrom(ns3:hasParticipant ns3:Agent))
+SubClassOf(ns3:Action ObjectMinCardinality(1 ns3:executesTask))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Agent> (<http://www.loa-cnr.it/ontologies/DUL.owl#Agent>)
+
+EquivalentClasses(ns3:Agent ObjectUnionOf(ns3:PhysicalAgent ns3:SocialAgent))
+SubClassOf(ns3:Agent ns3:Object)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Amount> (<http://www.loa-cnr.it/ontologies/DUL.owl#Amount>)
+
+SubClassOf(ns3:Amount ns3:Region)
+DisjointClasses(ns3:Amount ns3:PhysicalAttribute)
+DisjointClasses(ns3:Amount ns3:SpaceRegion)
+DisjointClasses(ns3:Amount ns3:TimeInterval)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#BiologicalObject>)
+
+SubClassOf(ns3:BiologicalObject ns3:PhysicalBody)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#ChemicalObject>)
+
+SubClassOf(ns3:ChemicalObject ns3:PhysicalBody)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Classification> (<http://www.loa-cnr.it/ontologies/DUL.owl#Classification>)
+
+SubClassOf(ns3:Classification ns3:Situation)
+SubClassOf(ns3:Classification ObjectSomeValuesFrom(ns3:isSettingFor ns3:Concept))
+SubClassOf(ns3:Classification ObjectSomeValuesFrom(ns3:isSettingFor ns3:TimeInterval))
+SubClassOf(ns3:Classification ObjectExactCardinality(3 ns3:isSettingFor))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Collection> (<http://www.loa-cnr.it/ontologies/DUL.owl#Collection>)
+
+SubClassOf(ns3:Collection ns3:SocialObject)
+SubClassOf(ns3:Collection ObjectAllValuesFrom(ns3:hasPart ns3:Collection))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Collective> (<http://www.loa-cnr.it/ontologies/DUL.owl#Collective>)
+
+SubClassOf(ns3:Collective ns3:Collection)
+SubClassOf(ns3:Collective ObjectAllValuesFrom(ns3:hasMember ns3:Agent))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent> (<http://www.loa-cnr.it/ontologies/DUL.owl#CollectiveAgent>)
+
+SubClassOf(ns3:CollectiveAgent ns3:SocialAgent)
+SubClassOf(ns3:CollectiveAgent ObjectSomeValuesFrom(ns3:actsThrough ObjectSomeValuesFrom(ns3:isMemberOf ns3:Collective)))
+SubClassOf(ns3:CollectiveAgent ObjectSomeValuesFrom(ns3:isIntroducedBy ObjectIntersectionOf(ns3:Description ObjectSomeValuesFrom(ns3:unifies ns3:Collective))))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Community> (<http://www.loa-cnr.it/ontologies/DUL.owl#Community>)
+
+SubClassOf(ns3:Community ns3:CollectiveAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Concept> (<http://www.loa-cnr.it/ontologies/DUL.owl#Concept>)
+
+SubClassOf(ns3:Concept ns3:SocialObject)
+SubClassOf(ns3:Concept ObjectSomeValuesFrom(ns3:isDefinedIn ns3:Description))
+SubClassOf(ns3:Concept ObjectAllValuesFrom(ns3:hasPart ns3:Concept))
+DisjointClasses(ns3:Concept ns3:Description)
+DisjointClasses(ns3:Concept ns3:InformationObject)
+DisjointClasses(ns3:Concept ns3:Situation)
+DisjointClasses(ns3:Concept ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Configuration> (<http://www.loa-cnr.it/ontologies/DUL.owl#Configuration>)
+
+SubClassOf(ns3:Configuration ns3:Collection)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Contract> (<http://www.loa-cnr.it/ontologies/DUL.owl#Contract>)
+
+SubClassOf(ns3:Contract ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Description> (<http://www.loa-cnr.it/ontologies/DUL.owl#Description>)
+
+SubClassOf(ns3:Description ns3:SocialObject)
+DisjointClasses(ns3:Description ns3:InformationObject)
+DisjointClasses(ns3:Description ns3:Situation)
+DisjointClasses(ns3:Description ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Design> (<http://www.loa-cnr.it/ontologies/DUL.owl#Design>)
+
+SubClassOf(ns3:Design ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact> (<http://www.loa-cnr.it/ontologies/DUL.owl#DesignedArtifact>)
+
+SubClassOf(ns3:DesignedArtifact ns3:PhysicalArtifact)
+SubClassOf(ns3:DesignedArtifact ObjectSomeValuesFrom(ns3:isDescribedBy ns3:Design))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance> (<http://www.loa-cnr.it/ontologies/DUL.owl#DesignedSubstance>)
+
+SubClassOf(ns3:DesignedSubstance ns3:DesignedArtifact)
+SubClassOf(ns3:DesignedSubstance ns3:FunctionalSubstance)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis> (<http://www.loa-cnr.it/ontologies/DUL.owl#Diagnosis>)
+
+SubClassOf(ns3:Diagnosis ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Entity> (<http://www.loa-cnr.it/ontologies/DUL.owl#Entity>)
+
+EquivalentClasses(ns3:Entity ObjectUnionOf(ns3:Abstract ns3:Event ns3:Object ns3:Quality ns3:Region))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Event> (<http://www.loa-cnr.it/ontologies/DUL.owl#Event>)
+
+SubClassOf(ns3:Event ns3:Entity)
+SubClassOf(ns3:Event <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+SubClassOf(ns3:Event ObjectSomeValuesFrom(ns3:hasParticipant ns3:Object))
+SubClassOf(ns3:Event ObjectAllValuesFrom(ns3:hasConstituent ns3:Event))
+SubClassOf(ns3:Event ObjectAllValuesFrom(ns3:hasPart ns3:Event))
+DisjointClasses(ns3:Event ns3:Object)
+DisjointClasses(ns3:Event ns3:Quality)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#EventType> (<http://www.loa-cnr.it/ontologies/DUL.owl#EventType>)
+
+SubClassOf(ns3:EventType ns3:Concept)
+SubClassOf(ns3:EventType ObjectAllValuesFrom(ns3:classifies ns3:Event))
+DisjointClasses(ns3:EventType ns3:Parameter)
+DisjointClasses(ns3:EventType ns3:Role)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity> (<http://www.loa-cnr.it/ontologies/DUL.owl#FormalEntity>)
+
+SubClassOf(ns3:FormalEntity ns3:Abstract)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance> (<http://www.loa-cnr.it/ontologies/DUL.owl#FunctionalSubstance>)
+
+SubClassOf(ns3:FunctionalSubstance ns3:Substance)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Goal> (<http://www.loa-cnr.it/ontologies/DUL.owl#Goal>)
+
+SubClassOf(ns3:Goal ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Group> (<http://www.loa-cnr.it/ontologies/DUL.owl#Group>)
+
+SubClassOf(ns3:Group ns3:CollectiveAgent)
+SubClassOf(ns3:Group ObjectAllValuesFrom(ns3:actsThrough ObjectSomeValuesFrom(ns3:conceptualizes ns3:SocialRelation)))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity> (<http://www.loa-cnr.it/ontologies/DUL.owl#InformationEntity>)
+
+EquivalentClasses(ns3:InformationEntity ObjectUnionOf(ns3:InformationObject ns3:InformationRealization))
+SubClassOf(ns3:InformationEntity ns3:Entity)
+SubClassOf(ns3:InformationEntity <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#InformationObject>)
+
+SubClassOf(ns3:InformationObject ns3:InformationEntity)
+SubClassOf(ns3:InformationObject ns3:SocialObject)
+SubClassOf(ns3:InformationObject ObjectSomeValuesFrom(ns3:isRealizedBy ns3:InformationRealization))
+SubClassOf(ns3:InformationObject ObjectMinCardinality(1 ns3:expresses))
+DisjointClasses(ns3:InformationObject ns3:Situation)
+DisjointClasses(ns3:InformationObject ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization> (<http://www.loa-cnr.it/ontologies/DUL.owl#InformationRealization>)
+
+EquivalentClasses(ns3:InformationRealization ObjectIntersectionOf(ObjectUnionOf(ns3:PhysicalObject ObjectIntersectionOf(ns3:Event ObjectSomeValuesFrom(ns3:hasParticipant ns3:PhysicalObject))) ObjectSomeValuesFrom(ns3:realizes ns3:InformationObject)))
+SubClassOf(ns3:InformationRealization ns3:InformationEntity)
+SubClassOf(ns3:InformationRealization ObjectSomeValuesFrom(ns3:concretelyExpresses ns3:SocialObject))
+SubClassOf(ns3:InformationRealization ObjectSomeValuesFrom(ns3:realizes ns3:InformationObject))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept> (<http://www.loa-cnr.it/ontologies/DUL.owl#LocalConcept>)
+
+EquivalentClasses(ns3:LocalConcept ObjectIntersectionOf(ns3:Concept ObjectExactCardinality(1 ns3:isDefinedIn)))
+SubClassOf(ns3:LocalConcept ns3:Concept)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Method> (<http://www.loa-cnr.it/ontologies/DUL.owl#Method>)
+
+SubClassOf(ns3:Method ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Narrative> (<http://www.loa-cnr.it/ontologies/DUL.owl#Narrative>)
+
+SubClassOf(ns3:Narrative ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson> (<http://www.loa-cnr.it/ontologies/DUL.owl#NaturalPerson>)
+
+SubClassOf(ns3:NaturalPerson ns3:Person)
+SubClassOf(ns3:NaturalPerson ns3:PhysicalAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Norm> (<http://www.loa-cnr.it/ontologies/DUL.owl#Norm>)
+
+SubClassOf(ns3:Norm ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Object> (<http://www.loa-cnr.it/ontologies/DUL.owl#Object>)
+
+EquivalentClasses(ns3:Object ObjectUnionOf(ns3:PhysicalObject ns3:SocialObject))
+SubClassOf(ns3:Object ns3:Entity)
+SubClassOf(ns3:Object <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+SubClassOf(ns3:Object ObjectSomeValuesFrom(ns3:isParticipantIn ns3:Event))
+SubClassOf(ns3:Object ObjectAllValuesFrom(ns3:hasConstituent ns3:Object))
+SubClassOf(ns3:Object ObjectAllValuesFrom(ns3:hasPart ns3:Object))
+SubClassOf(ns3:Object ObjectAllValuesFrom(ns3:isClassifiedBy ns3:Role))
+DisjointClasses(ns3:Object ns3:Quality)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Organism> (<http://www.loa-cnr.it/ontologies/DUL.owl#Organism>)
+
+SubClassOf(ns3:Organism ns3:BiologicalObject)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Organization> (<http://www.loa-cnr.it/ontologies/DUL.owl#Organization>)
+
+SubClassOf(ns3:Organization ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Parameter> (<http://www.loa-cnr.it/ontologies/DUL.owl#Parameter>)
+
+SubClassOf(ns3:Parameter ns3:Concept)
+SubClassOf(ns3:Parameter ObjectAllValuesFrom(ns3:classifies ns3:Region))
+SubClassOf(ns3:Parameter ObjectAllValuesFrom(ns3:hasPart ns3:Parameter))
+DisjointClasses(ns3:Parameter ns3:Role)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Pattern> (<http://www.loa-cnr.it/ontologies/DUL.owl#Pattern>)
+
+SubClassOf(ns3:Pattern ns3:Relation)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Person> (<http://www.loa-cnr.it/ontologies/DUL.owl#Person>)
+
+EquivalentClasses(ns3:Person ObjectUnionOf(ns3:NaturalPerson ns3:SocialPerson))
+SubClassOf(ns3:Person ns3:Agent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Personification> (<http://www.loa-cnr.it/ontologies/DUL.owl#Personification>)
+
+SubClassOf(ns3:Personification ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAgent>)
+
+SubClassOf(ns3:PhysicalAgent ns3:Agent)
+SubClassOf(ns3:PhysicalAgent ns3:PhysicalObject)
+SubClassOf(ns3:PhysicalAgent ObjectSomeValuesFrom(ns3:conceptualizes ns3:Plan))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalArtifact>)
+
+SubClassOf(ns3:PhysicalArtifact ns3:PhysicalObject)
+SubClassOf(ns3:PhysicalArtifact ObjectSomeValuesFrom(ns3:isDescribedBy ns3:Plan))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalAttribute>)
+
+SubClassOf(ns3:PhysicalAttribute ns3:Region)
+SubClassOf(ns3:PhysicalAttribute ObjectAllValuesFrom(ns3:isRegionFor ns3:PhysicalObject))
+DisjointClasses(ns3:PhysicalAttribute ns3:SpaceRegion)
+DisjointClasses(ns3:PhysicalAttribute ns3:TimeInterval)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalBody>)
+
+SubClassOf(ns3:PhysicalBody ns3:PhysicalObject)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalObject>)
+
+SubClassOf(ns3:PhysicalObject ns3:Object)
+SubClassOf(ns3:PhysicalObject ObjectAllValuesFrom(ns3:hasPart ns3:PhysicalObject))
+DisjointClasses(ns3:PhysicalObject ns3:SocialObject)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace> (<http://www.loa-cnr.it/ontologies/DUL.owl#PhysicalPlace>)
+
+SubClassOf(ns3:PhysicalPlace ns3:PhysicalObject)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Place> (<http://www.loa-cnr.it/ontologies/DUL.owl#Place>)
+
+SubClassOf(ns3:Place ns3:SocialObject)
+SubClassOf(ns3:Place ObjectMinCardinality(1 ns3:isLocationOf))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Plan> (<http://www.loa-cnr.it/ontologies/DUL.owl#Plan>)
+
+SubClassOf(ns3:Plan ns3:Description)
+SubClassOf(ns3:Plan ObjectSomeValuesFrom(ns3:hasComponent ns3:Goal))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution> (<http://www.loa-cnr.it/ontologies/DUL.owl#PlanExecution>)
+
+EquivalentClasses(ns3:PlanExecution ObjectIntersectionOf(ns3:Situation ObjectSomeValuesFrom(ns3:satisfies ns3:Plan)))
+SubClassOf(ns3:PlanExecution ns3:Situation)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Process> (<http://www.loa-cnr.it/ontologies/DUL.owl#Process>)
+
+SubClassOf(ns3:Process ns3:Event)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Project> (<http://www.loa-cnr.it/ontologies/DUL.owl#Project>)
+
+SubClassOf(ns3:Project ns3:Plan)
+SubClassOf(ns3:Project ObjectSomeValuesFrom(ns3:defines ns3:Role))
+SubClassOf(ns3:Project ObjectSomeValuesFrom(ns3:defines ns3:Task))
+SubClassOf(ns3:Project ObjectMinCardinality(3 ns3:defines))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Quality> (<http://www.loa-cnr.it/ontologies/DUL.owl#Quality>)
+
+SubClassOf(ns3:Quality ns3:Entity)
+SubClassOf(ns3:Quality <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+SubClassOf(ns3:Quality ObjectSomeValuesFrom(ns3:isQualityOf ns3:Entity))
+SubClassOf(ns3:Quality ObjectSomeValuesFrom(ns3:isQualityOf <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>))
+SubClassOf(ns3:Quality ObjectAllValuesFrom(ns3:hasConstituent ns3:Quality))
+SubClassOf(ns3:Quality ObjectAllValuesFrom(ns3:hasPart ns3:Quality))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Region> (<http://www.loa-cnr.it/ontologies/DUL.owl#Region>)
+
+SubClassOf(ns3:Region ns3:Abstract)
+SubClassOf(ns3:Region ObjectAllValuesFrom(ns3:hasConstituent ns3:Region))
+SubClassOf(ns3:Region ObjectAllValuesFrom(ns3:hasPart ns3:Region))
+SubClassOf(ns3:Region ObjectAllValuesFrom(ns3:overlaps ns3:Region))
+SubClassOf(ns3:Region ObjectAllValuesFrom(ns3:precedes ns3:Region))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Relation> (<http://www.loa-cnr.it/ontologies/DUL.owl#Relation>)
+
+SubClassOf(ns3:Relation ns3:Description)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Right> (<http://www.loa-cnr.it/ontologies/DUL.owl#Right>)
+
+SubClassOf(ns3:Right ns3:Description)
+SubClassOf(ns3:Right ObjectMinCardinality(2 ns3:definesRole))
+SubClassOf(ns3:Right ObjectMinCardinality(1 ns3:definesTask))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Role> (<http://www.loa-cnr.it/ontologies/DUL.owl#Role>)
+
+SubClassOf(ns3:Role ns3:Concept)
+SubClassOf(ns3:Role ObjectAllValuesFrom(ns3:classifies ns3:Object))
+SubClassOf(ns3:Role ObjectAllValuesFrom(ns3:hasPart ns3:Role))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Set> (<http://www.loa-cnr.it/ontologies/DUL.owl#Set>)
+
+SubClassOf(ns3:Set ns3:FormalEntity)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Situation> (<http://www.loa-cnr.it/ontologies/DUL.owl#Situation>)
+
+SubClassOf(ns3:Situation ns3:SocialObject)
+SubClassOf(ns3:Situation ObjectSomeValuesFrom(ns3:satisfies ns3:Description))
+DisjointClasses(ns3:Situation ns3:SocialAgent)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent> (<http://www.loa-cnr.it/ontologies/DUL.owl#SocialAgent>)
+
+SubClassOf(ns3:SocialAgent ns3:Agent)
+SubClassOf(ns3:SocialAgent ns3:SocialObject)
+SubClassOf(ns3:SocialAgent ObjectSomeValuesFrom(ns3:actsThrough ns3:PhysicalAgent))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject> (<http://www.loa-cnr.it/ontologies/DUL.owl#SocialObject>)
+
+EquivalentClasses(ns3:SocialObject ObjectUnionOf(ns3:Collection ns3:Concept ns3:Description ns3:InformationObject ns3:Place ns3:Situation ns3:SocialAgent))
+SubClassOf(ns3:SocialObject ns3:Object)
+SubClassOf(ns3:SocialObject ObjectSomeValuesFrom(ns3:isExpressedBy ns3:InformationObject))
+SubClassOf(ns3:SocialObject ObjectAllValuesFrom(ns3:hasPart ns3:SocialObject))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SocialObjectAttribute> (<http://www.loa-cnr.it/ontologies/DUL.owl#SocialObjectAttribute>)
+
+SubClassOf(ns3:SocialObjectAttribute ns3:Region)
+SubClassOf(ns3:SocialObjectAttribute ObjectAllValuesFrom(ns3:isRegionFor ns3:SocialObject))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson> (<http://www.loa-cnr.it/ontologies/DUL.owl#SocialPerson>)
+
+SubClassOf(ns3:SocialPerson ns3:Person)
+SubClassOf(ns3:SocialPerson ns3:SocialAgent)
+SubClassOf(ns3:SocialPerson ObjectExactCardinality(1 ns3:actsThrough))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation> (<http://www.loa-cnr.it/ontologies/DUL.owl#SocialRelation>)
+
+SubClassOf(ns3:SocialRelation ns3:Relation)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion> (<http://www.loa-cnr.it/ontologies/DUL.owl#SpaceRegion>)
+
+SubClassOf(ns3:SpaceRegion ns3:Region)
+DisjointClasses(ns3:SpaceRegion ns3:TimeInterval)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion> (<http://www.loa-cnr.it/ontologies/DUL.owl#SpatioTemporalRegion>)
+
+SubClassOf(ns3:SpatioTemporalRegion ns3:Region)
+SubClassOf(ns3:SpatioTemporalRegion ObjectSomeValuesFrom(ns3:hasConstituent ns3:SpaceRegion))
+SubClassOf(ns3:SpatioTemporalRegion ObjectSomeValuesFrom(ns3:hasConstituent ns3:TimeInterval))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Substance> (<http://www.loa-cnr.it/ontologies/DUL.owl#Substance>)
+
+SubClassOf(ns3:Substance ns3:PhysicalBody)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Task> (<http://www.loa-cnr.it/ontologies/DUL.owl#Task>)
+
+SubClassOf(ns3:Task ns3:EventType)
+SubClassOf(ns3:Task ObjectAllValuesFrom(ns3:hasPart ns3:Task))
+SubClassOf(ns3:Task ObjectAllValuesFrom(ns3:isExecutedIn ns3:Action))
+SubClassOf(ns3:Task ObjectAllValuesFrom(ns3:isTaskDefinedIn ns3:Description))
+SubClassOf(ns3:Task ObjectAllValuesFrom(ns3:isTaskOf ns3:Role))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Theory> (<http://www.loa-cnr.it/ontologies/DUL.owl#Theory>)
+
+SubClassOf(ns3:Theory ns3:Description)
+SubClassOf(ns3:Theory ObjectSomeValuesFrom(ns3:hasComponent ns3:Relation))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval> (<http://www.loa-cnr.it/ontologies/DUL.owl#TimeInterval>)
+
+SubClassOf(ns3:TimeInterval ns3:Region)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Transition> (<http://www.loa-cnr.it/ontologies/DUL.owl#Transition>)
+
+SubClassOf(ns3:Transition ns3:Situation)
+SubClassOf(ns3:Transition ObjectSomeValuesFrom(ns3:isSettingFor ns3:Process))
+SubClassOf(ns3:Transition ObjectSomeValuesFrom(ns3:isSettingFor ns3:Situation))
+SubClassOf(ns3:Transition ObjectMinCardinality(2 ns3:includesEvent))
+SubClassOf(ns3:Transition ObjectMinCardinality(1 ns3:includesObject))
+SubClassOf(ns3:Transition ObjectMinCardinality(3 ns3:includesTime))
+SubClassOf(ns3:Transition ObjectMinCardinality(8 ns3:isSettingFor))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection> (<http://www.loa-cnr.it/ontologies/DUL.owl#TypeCollection>)
+
+SubClassOf(ns3:TypeCollection ns3:Collection)
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure> (<http://www.loa-cnr.it/ontologies/DUL.owl#UnitOfMeasure>)
+
+SubClassOf(ns3:UnitOfMeasure ns3:Parameter)
+SubClassOf(ns3:UnitOfMeasure ObjectSomeValuesFrom(ns3:parametrizes ns3:Region))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#Workflow> (<http://www.loa-cnr.it/ontologies/DUL.owl#Workflow>)
+
+SubClassOf(ns3:Workflow ns3:Plan)
+SubClassOf(ns3:Workflow ObjectSomeValuesFrom(ns3:defines ns3:Role))
+SubClassOf(ns3:Workflow ObjectSomeValuesFrom(ns3:defines ns3:Task))
+SubClassOf(ns3:Workflow ObjectMinCardinality(3 ns3:defines))
+
+# Class: <http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution> (<http://www.loa-cnr.it/ontologies/DUL.owl#WorkflowExecution>)
+
+EquivalentClasses(ns3:WorkflowExecution ObjectIntersectionOf(ns3:PlanExecution ObjectSomeValuesFrom(ns3:satisfies ns3:Workflow)))
+SubClassOf(ns3:WorkflowExecution ns3:PlanExecution)
+
+# Class: <http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity> (<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity>)
+
+EquivalentClasses(<http://www.loa.istc.cnr.it/ontologies/DUL.owl#Entity> ObjectUnionOf(ns3:Abstract ns3:Event ns3:Object ns3:Quality ns3:Region))
+
+
+DisjointClasses(:HighValue :LowValue :MediumValue)
+SubObjectPropertyOf(ObjectPropertyChain(ns1:hasMeasurementCapability ns1:forProperty) ns1:observes)
+SubObjectPropertyOf(ObjectPropertyChain(ns1:madeObservation ns1:observedProperty) ns1:observes)
+SubObjectPropertyOf(ObjectPropertyChain(ns1:observedBy ns1:observes ns1:isPropertyOf) ns5:observedFeature)
+)
