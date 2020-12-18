@@ -28,6 +28,15 @@ mvn clean compile assembly:single
 mv target/OWL2Streams-0.0.1-jar-with-dependencies.jar owl2streams.jar
 ```
 
+# Ontology Schemas
+Below, we show the used Ontology TBoxes:
+
+- OWL2Bench TBox as defined in [1]
+![OWL2BenchTbox](figs/owl2benchTBox.png "OWL2BenchTbox")
+
+- CityBenchPlus TBox as an extension of [2]
+![CitybenchPlusTbox](figs/citybenchplusTbox.png "CityBenchPlusTbox")
+
 # References
 [1] Singh, G., Bhatia, S. and Mutharaju, R., 2020, November. OWL2Bench: A Benchmark for OWL 2 Reasoners. In International Semantic Web Conference (pp. 81-96). Springer, Cham.
 
