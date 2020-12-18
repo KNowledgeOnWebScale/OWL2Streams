@@ -30,4 +30,5 @@ mv target/OWL2Streams-0.0.1-jar-with-dependencies.jar owl2streams.jar
 
 # References
 [1] Singh, G., Bhatia, S. and Mutharaju, R., 2020, November. OWL2Bench: A Benchmark for OWL 2 Reasoners. In International Semantic Web Conference (pp. 81-96). Springer, Cham.
+
 [2] Ali, M.I., Gao, F. and Mileo, A., 2015, October. Citybench: A configurable benchmark to evaluate rsp engines using smart city datasets. In International Semantic Web Conference (pp. 374-389). Springer, Cham.
