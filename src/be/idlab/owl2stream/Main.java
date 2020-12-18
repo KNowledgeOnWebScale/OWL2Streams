@@ -11,7 +11,11 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 import be.idlab.owl2stream.citybenchplus.CityBuilder;
+import be.idlab.owl2stream.owl2benchstream.UniversityBuilder;
+
 import static spark.Spark.*;
+
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
@@ -24,32 +28,44 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		port(9000);
-       
-		CityBuilder builder = new CityBuilder(1);
+		if(args.length==0) {
+			System.out.println("USAGE: <type>[University|City|Building] <size>[int]");
+		}else {
 		
-		OWLOntology tbx = builder.getTBox();
-		OWLOntology abox = builder.getABox(1);
-		 get("/abox", (req, res) -> getOntologyString(abox));
-		 get("/tbox", (req, res) -> getOntologyString(tbx));
-		String mapped = builder.getInstantaneousABox(0);
-		mapped = builder.getInstantaneousABox(1);
+		port(9000);
+		String scenarioType = args[0];
+		int size = Integer.parseInt(args[1]);
+		System.out.println("Get the Ontology TBox at: <url>/tbox\n"
+				+ "Get the Ontology ABox at: <url>/abox\n"
+				+ "Pull the stream at: <url>/event");
+		if(scenarioType.toLowerCase().equals("university")) {
+			System.out.println(String.format("Staring University Stream Generator with %s departments", size));
+			//ScenarioGenerator builder = new CityBuilder(1);
+			ScenarioGenerator builder = new UniversityBuilder(size);
+			OWLOntology tbx = builder.getTBox();
+			OWLOntology abox = builder.getABox(size);
+			 get("/abox", (req, res) -> Utils.getOntologyString(abox));
+			 get("/tbox", (req, res) -> Utils.getOntologyString(tbx));
+			AtomicInteger counter = new AtomicInteger(0);
+			get("/event", (req, res) -> builder.getInstantaneousABox(counter.getAndIncrement()));
+			
+		}else {
+			System.out.println(String.format("Staring City Stream Generator with %s squares", size));
+
+			ScenarioGenerator builder = new CityBuilder(size);
+			OWLOntology tbx = builder.getTBox();
+			OWLOntology abox = builder.getABox(size);
+			 get("/abox", (req, res) -> Utils.getOntologyString(abox));
+			 get("/tbox", (req, res) -> Utils.getOntologyString(tbx));
+			 builder.getInstantaneousABox(0);
+			AtomicInteger counter = new AtomicInteger(1);
+			get("/event", (req, res) -> builder.getInstantaneousABox(counter.getAndIncrement()));
+		
+		}
+		}
 
 	}
 	
-	public static String getOntologyString(OWLOntology ont) {
-		String ontStr="";
-		try {
-			OWLOntologyManager manager = ont.getOWLOntologyManager();
-			StringDocumentTarget target = new StringDocumentTarget();
-			TurtleDocumentFormat turtleFormat = new TurtleDocumentFormat();
-			manager.saveOntology(ont,turtleFormat, target);
-			ontStr = target.toString();
-		} catch ( OWLOntologyStorageException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return ontStr;
-	}
+	
 
 }

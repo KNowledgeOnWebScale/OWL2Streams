@@ -156,7 +156,6 @@ public class CityBuilder implements ScenarioGenerator {
 			}
 			properties.stream().forEach(p -> p.asOWLNamedIndividual().accept(remover));
 			profiles.stream().forEach(p -> p.asOWLNamedIndividual().accept(remover));
-			System.out.println(ont.getAxiomCount());
 			manager.applyChanges(remover.getChanges());
 			// remove blank nodes
 			Stream<OWLAxiom> anonAxes = ont.axioms().filter(ax -> ax.toString().contains("_:genid"));
@@ -164,7 +163,6 @@ public class CityBuilder implements ScenarioGenerator {
 			 
 			this.abox = manager.createOntology();
 			manager.addAxioms(this.abox, ont.getAxioms());
-			System.out.println(ont.getAxiomCount());
 
 			// save schema only version
 			remover.reset();
